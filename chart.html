@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>French 2027 presidential first-round polling</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 2rem; }
+  h1 { font-size: 1.3rem; }
+  #chart-container { max-width: 1100px; height: 600px; }
+  #status { color: #888; }
+</style>
+</head>
+<body>
+<h1>French presidential election 2027 — first-round polling (Jan–Jun 2026)</h1>
+<p id="status">Loading data/polls_2027_presidential_first_round.csv…</p>
+<div id="chart-container"><canvas id="chart"></canvas></div>
+
+<script>
+const CANDIDATES = [
+  ['Arthaud_LO', 'Arthaud (LO)', '#8B0000', true],
+  ['Melenchon_LFI', 'Mélenchon (LFI)', '#CC2443', false],
+  ['Roussel_PCF', 'Roussel (PCF)', '#DD0000', true],
+  ['Tondelier_LE', 'Tondelier (LE)', '#00A550', true],
+  ['Glucksmann_PP', 'Glucksmann (PP)', '#FF8C00', false],
+  ['Attal_RE', 'Attal (RE)', '#FFCC00', false],
+  ['Philippe_HOR', 'Philippe (HOR)', '#1E90FF', false],
+  ['Villepin_LFH', 'Villepin (LFH)', '#7B2D8E', true],
+  ['Retailleau_LR', 'Retailleau (LR)', '#0072BC', false],
+  ['DupontAignan_DLF', 'Dupont-Aignan (DLF)', '#003399', true],
+  ['RN', 'RN (Bardella/Le Pen)', '#001F5B', false],
+  ['Zemmour_REC', 'Zemmour (REC)', '#2C2C54', true],
+  ['Autre', 'Autre', '#888888', true],
+];
+
+function parseDateKey(dateStr) {
+  const months = {janvier:1, février:2, mars:3, avril:4, mai:5, juin:6,
+                  juillet:7, août:8, septembre:9, octobre:10, novembre:11, décembre:12};
+  const dayMatch = dateStr.match(/\d+/);
+  const day = dayMatch ? parseInt(dayMatch[0], 10) : 1;
+  let month = 1;
+  for (const name in months) {
+    if (dateStr.includes(name)) { month = months[name]; break; }
+  }
+  return new Date(2026, month - 1, day).getTime();
+}
+
+async function main() {
+  const res = await fetch('data/polls_2027_presidential_first_round.csv');
+  const text = await res.text();
+  const lines = text.trim().split('\n').map(l => l.replace(/\r$/, ''));
+  const header = lines[0].split(',');
+  const rows = lines.slice(1).map(l => {
+    const cells = l.split(',');
+    const obj = {};
+    header.forEach((h, i) => obj[h] = cells[i]);
+    return obj;
+  });
+
+  const polls = new Map();
+  for (const row of rows) {
+    const key = `${row.pollster}|${row.date}|${row.sample}`;
+    if (!polls.has(key)) {
+      polls.set(key, { pollster: row.pollster, date: row.date, sums: {}, counts: {} });
+    }
+    const poll = polls.get(key);
+    for (const [col] of CANDIDATES) {
+      const v = parseFloat(row[col]);
+      if (!isNaN(v)) {
+        poll.sums[col] = (poll.sums[col] || 0) + v;
+        poll.counts[col] = (poll.counts[col] || 0) + 1;
+      }
+    }
+  }
+
+  const pollList = Array.from(polls.values());
+  pollList.forEach(p => p.t = parseDateKey(p.date));
+  pollList.sort((a, b) => a.t - b.t);
+
+  const labels = pollList.map(p => `${p.pollster}\n${p.date}`);
+  const datasets = CANDIDATES.map(([col, label, color, hiddenByDefault]) => ({
+    label,
+    data: pollList.map(p => p.counts[col] ? +(p.sums[col] / p.counts[col]).toFixed(1) : null),
+    borderColor: color,
+    backgroundColor: color,
+    spanGaps: true,
+    hidden: hiddenByDefault,
+    tension: 0.2,
+  }));
+
+  document.getElementById('status').remove();
+  new Chart(document.getElementById('chart'), {
+    type: 'line',
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'nearest', intersect: false },
+      scales: {
+        y: { title: { display: true, text: 'Vote share (%)' } },
+        x: { ticks: { autoSkip: true, maxRotation: 60, minRotation: 45 } },
+      },
+      plugins: {
+        title: { display: false },
+        tooltip: { callbacks: { title: items => items[0].label.replace('\n', ' — ') } },
+      },
+    },
+  });
+}
+
+main().catch(err => {
+  document.getElementById('status').textContent = 'Failed to load data: ' + err;
+});
+</script>
+</body>
+</html>

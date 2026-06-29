@@ -54,10 +54,7 @@ def parse_value_cell(raw):
     if main in ('—', '-', '', '–'):
         val = None
     else:
-        try:
-            val = float(main.replace(',', '.').replace(' ', ''))
-        except ValueError:
-            val = main
+        val = main.replace(',', '.').replace(' ', '')
     return val, note, colspan
 
 def is_event_row(lines):
@@ -109,7 +106,7 @@ def parse_rows(text):
             val, note, colspan = parse_value_cell(raw_cell)
             row[CANDIDATES[ci]] = val
             if note:
-                notes.append(f"{CANDIDATES[ci]}={val if val is not None else ''} ({note})")
+                notes.append(f"{CANDIDATES[ci]}={float(val) if val is not None else ''} ({note})")
             for skip in range(1, colspan):
                 if ci + skip < len(CANDIDATES):
                     row[CANDIDATES[ci + skip]] = None

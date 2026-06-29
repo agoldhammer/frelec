@@ -1,4 +1,12 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
+Ifop,22-24 juin,1415,1,0.5,13,3,2.5,9,8,14,,8,2,36,4,,RN=36.0 (Bardella)
+Ifop,22-24 juin,1415,2,0.5,13,3,3.5,10,,19,,9,2,36,4,,RN=36.0 (Bardella)
+Ifop,22-24 juin,1415,3,0.5,13,2.5,3.5,11,15,,,11,2,37,4.5,,RN=37.0 (Bardella)
+Ifop,22-24 juin,1415,4,1,12,3,4,9,,20,,11,2,32,6,,RN=32.0 (Le Pen)
+Ifop,22-24 juin,1415,5,1,13,3,3,11,15,,,14,3,32,5,,RN=32.0 (Le Pen)
+Ifop,22-24 juin,1415,6,1.5,15,9,,,,21,,10,3,37,3.5,,Roussel_PCF=9.0 (Hollande (PS)); RN=37.0 (Bardella)
+Ifop,22-24 juin,1415,7,1.5,14,11,,,,20,,11,2.5,36,4,,Roussel_PCF=11.0 (Glucksmann); RN=36.0 (Bardella)
+Ifop,22-24 juin,1415,8,1,13,2.5,3.5,8,,19,,9,2.5,35,4.5,2,RN=35.0 (Bardella); Autre=2.0 (Lisnard)
 OpinionWay,10-11 juin,1001,1,1,16,,,16,,19,,9,2,34,3,,RN=34.0 (Bardella / Le Pen)
 OpinionWay,10-11 juin,1001,2,1,13,3,5,13,,19,,8,2,33,3,,RN=33.0 (Bardella / Le Pen)
 OpinionWay,10-11 juin,1001,3,1,13,4,4,14,14,,,9,2,35,4,,RN=35.0 (Bardella / Le Pen)
