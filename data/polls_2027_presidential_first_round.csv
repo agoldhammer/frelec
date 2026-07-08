@@ -1,4 +1,11 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
+Ifop,7-8 juillet,984,1,0.5,15,2,4,12,15,,,10,2,36,3.5,,
+Ifop,7-8 juillet,984,2,0.5,15,3,3.5,9,,19,,8,2,36,4,,
+Harris Interactive,7-8 juillet,1592,1,1,16,3,5,8,16,,,8,2,36,5,,Glucksmann_PP=8.0 (Hollande (PS))
+Harris Interactive,7-8 juillet,1592,2,1,16,3,4,8,,20,,8,1,35,4,,Glucksmann_PP=8.0 (Hollande (PS))
+Harris Interactive,7-8 juillet,1592,3,1,16,3,3,11,16,,,9,1,36,4,,
+Harris Interactive,7-8 juillet,1592,4,1,16,2,3,11,,20,,8,1,34,4,,
+Harris Interactive,7-8 juillet,1592,5,1,16,2,2,10,8,14,,7,1,35,4,,
 Ifop,22-24 juin,1415,1,0.5,13,3,2.5,9,8,14,,8,2,36,4,,RN=36.0 (Bardella)
 Ifop,22-24 juin,1415,2,0.5,13,3,3.5,10,,19,,9,2,36,4,,RN=36.0 (Bardella)
 Ifop,22-24 juin,1415,3,0.5,13,2.5,3.5,11,15,,,11,2,37,4.5,,RN=37.0 (Bardella)

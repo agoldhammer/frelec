@@ -31,7 +31,7 @@ def strip_attrs(s):
 def clean_text(s):
     s = re.sub(r'\{\{blanc\|([^}]*)\}\}', r'\1', s)
     s = re.sub(r"'''(.*?)'''", r'\1', s)
-    s = re.sub(r'\{\{formatnum:([^}]*)\}\}', r'\1', s)
+    s = re.sub(r'\{\{formatnum[:|]([^}]*)\}\}', r'\1', s, flags=re.IGNORECASE)
     s = re.sub(r'\[\[[^|\]]*\|([^\]]*)\]\]', r'\1', s)
     s = re.sub(r'\[\[([^\]]*)\]\]', r'\1', s)
     s = re.sub(r'\[https?://\S+\s+([^\]]+)\]', r'\1', s)
@@ -69,7 +69,7 @@ def parse_rows(text):
     scenario_idx = 0
 
     for block in blocks:
-        lines = [l for l in block.split('\n') if l.strip()]
+        lines = [l for l in block.split('\n') if l.strip() and l.strip() != '|}']
         if not lines:
             continue
         if any(l.lstrip().startswith('!') for l in lines):
