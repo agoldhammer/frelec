@@ -339,7 +339,7 @@ def main():
                     help="Gaussian kernel sigma in days (default: 15)")
     ap.add_argument("--dark", action="store_true", help="dark theme")
     ap.add_argument("-o", "--output", default=None,
-                    help="output PNG path (default: polls_2027_first_round[_dark].png)")
+                    help="output PNG path (default: france-first_round[_dark].png)")
     ap.add_argument("--out-recent", default=None,
                     help="output PNG path for the recent-period chart")
     ap.add_argument("--out-pollsters", default=None,
@@ -351,9 +351,9 @@ def main():
 
     theme = THEMES["dark" if args.dark else "light"]
     suffix = "_dark" if args.dark else ""
-    out = args.output or f"polls_2027_first_round{suffix}.png"
-    out_recent = args.out_recent or f"polls_2027_first_round_recent{suffix}.png"
-    out_pollsters = args.out_pollsters or f"polls_2027_first_round_pollsters{suffix}.png"
+    out = args.output or f"france-first_round{suffix}.png"
+    out_recent = args.out_recent or f"france-first_round_recent{suffix}.png"
+    out_pollsters = args.out_pollsters or f"france-first_round_pollsters{suffix}.png"
 
     poll_means, raw_points = load_polls(args.csv)
     if not poll_means:

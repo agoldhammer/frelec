@@ -250,12 +250,12 @@ def main():
     ap.add_argument("--dark", action="store_true", help="dark theme")
     ap.add_argument("--csv", default=CSV_PATH, help="input CSV path")
     ap.add_argument("-o", "--output-prefix", default=None,
-                     help="output path prefix (default: polls_2027_second_round)")
+                     help="output path prefix (default: france-second_round)")
     args = ap.parse_args()
 
     theme = THEMES["dark" if args.dark else "light"]
     suffix = "_dark" if args.dark else ""
-    prefix = args.output_prefix or "polls_2027_second_round"
+    prefix = args.output_prefix or "france-second_round"
 
     rows = load_runoff(args.csv)
     if not rows:

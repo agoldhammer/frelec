@@ -15,13 +15,13 @@ in `pyproject.toml`):
 
 ```
 # First round: overall trend, recent-period trend, and per-pollster comparison
-uv run python visualize_polls.py            # light theme → polls_2027_first_round[_recent|_pollsters].png
+uv run python visualize_polls.py            # light theme → france-first_round[_recent|_pollsters].png
 uv run python visualize_polls.py --dark     # dark theme  → …_dark.png
 uv run python visualize_polls.py --sigma 10 -o custom.png
 uv run python visualize_polls.py --recent-days 30
 
 # Second round: runoff trend by challenger, and latest-poll-per-matchup snapshot
-uv run python visualize_second_round.py            # light theme → polls_2027_second_round_trend.png, …_snapshot.png
+uv run python visualize_second_round.py            # light theme → france-second_round_trend.png, …_snapshot.png
 uv run python visualize_second_round.py --dark      # dark theme  → …_dark.png
 ```
 
