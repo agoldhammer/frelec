@@ -1,4 +1,4 @@
-import re, csv, sys
+import re, csv, sys, unicodedata
 
 CANDIDATES = ['Arthaud_LO','Melenchon_LFI','Roussel_PCF','Tondelier_LE','Glucksmann_PP',
               'Attal_RE','Philippe_HOR','Villepin_LFH','Retailleau_LR','DupontAignan_DLF',
@@ -37,6 +37,7 @@ def clean_text(s):
     s = re.sub(r'\[https?://\S+\s+([^\]]+)\]', r'\1', s)
     s = re.sub(r'\[https?://\S+\]', '', s)
     s = re.sub(r'\{\{note\|[^}]*\}\}', '', s)
+    s = re.sub(r'\{\{1er\}\}', '1er', s, flags=re.IGNORECASE)
     return s.strip()
 
 def parse_value_cell(raw):
@@ -115,13 +116,93 @@ def parse_rows(text):
         polls.append(row)
     return polls
 
+# --- second-round (runoff) matchup tables -----------------------------
+#
+# Each "== Sondages concernant le second tour ==" subsection is one
+# "=== Hypothèse X – Y ===" heading followed by its own small wikitable:
+# Sondeur | Dates | Échantillon | X% | Y%. Unlike the first-round table
+# there's no rowspan grouping (one wiki row = one poll), so this reuses
+# strip_attrs/clean_text/parse_value_cell but not parse_rows's rowspan
+# bookkeeping.
+
+HYPOTHESIS_RE = re.compile(r'=== Hypothèse (.+?) ===\n(.*?\n\|\})', re.DOTALL)
+# Column header cells look like:
+#   [[Jean-Luc Mélenchon|Mélenchon]]<br><small>([[La France insoumise|LFI]])</small>
+HEADER_NAME_RE = re.compile(
+    r'\[\[[^|\]]+\|([^\]]+)\]\]<br>\s*<small>\(\[\[[^|\]]+\|([^\]]+)\]\]\)</small>'
+)
+
+def slugify(text):
+    """ASCII-only identifier fragment: strip accents, drop non-alnum."""
+    text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('ascii')
+    return re.sub(r'[^A-Za-z0-9]', '', text)
+
+def is_second_round_event_row(lines):
+    return len(lines) == 1 and 'colspan' in lines[0]
+
+def parse_second_round_rows(text):
+    m = re.search(r'== Sondages concernant le second tour ==(.*?)\n== ', text, re.DOTALL)
+    section = m.group(1) if m else text
+
+    rows = []
+    for heading, table in HYPOTHESIS_RE.findall(section):
+        names = HEADER_NAME_RE.findall(table)
+        if len(names) != 2:
+            continue
+        (name_a, party_a), (name_b, party_b) = names
+        cand_a = f"{slugify(name_a)}_{slugify(party_a)}"
+        cand_b = f"{slugify(name_b)}_{slugify(party_b)}"
+
+        blocks = re.split(r'(?m)^\|-[^\n]*\n?', table)
+        for block in blocks:
+            lines = [l for l in block.split('\n') if l.strip() and l.strip() != '|}']
+            lines = [l for l in lines if not l.lstrip().startswith('{|')]
+            if not lines:
+                continue
+            if any(l.lstrip().startswith('!') for l in lines):
+                continue  # header row
+            if is_second_round_event_row(lines):
+                continue  # full-width event annotation row
+            cells = [l[1:] if l.startswith('|') else l for l in lines]
+            if len(cells) < 5:
+                continue
+            if all(strip_attrs(c) == '' for c in cells):
+                continue  # legend/style row
+
+            pollster = clean_text(strip_attrs(cells[0]))
+            date = clean_text(strip_attrs(cells[1]))
+            sample = clean_text(strip_attrs(cells[2])).replace('\xa0', ' ')
+            sample = re.sub(r'(?<=\d)\s(?=\d)', '', sample)
+            pct_a, _, _ = parse_value_cell(cells[3])
+            pct_b, _, _ = parse_value_cell(cells[4])
+
+            rows.append({
+                'matchup': f"{cand_a}-{cand_b}",
+                'candidate_a': cand_a, 'candidate_b': cand_b,
+                'pollster': pollster, 'date': date, 'sample': sample,
+                'pct_a': pct_a, 'pct_b': pct_b,
+            })
+    return rows
+
 if __name__ == '__main__':
     with open(sys.argv[1], encoding='utf-8') as f:
         text = f.read()
-    polls = parse_rows(text)
-    with open(sys.argv[2], 'w', newline='', encoding='utf-8') as f:
-        w = csv.DictWriter(f, fieldnames=['pollster', 'date', 'sample', 'scenario'] + CANDIDATES + ['notes'])
-        w.writeheader()
-        for p in polls:
-            w.writerow(p)
-    print(f"Parsed {len(polls)} scenario-rows")
+
+    if '--second-round' in sys.argv:
+        rows = parse_second_round_rows(text)
+        with open(sys.argv[2], 'w', newline='', encoding='utf-8') as f:
+            w = csv.DictWriter(f, fieldnames=[
+                'matchup', 'candidate_a', 'candidate_b',
+                'pollster', 'date', 'sample', 'pct_a', 'pct_b'])
+            w.writeheader()
+            for r in rows:
+                w.writerow(r)
+        print(f"Parsed {len(rows)} second-round matchup rows")
+    else:
+        polls = parse_rows(text)
+        with open(sys.argv[2], 'w', newline='', encoding='utf-8') as f:
+            w = csv.DictWriter(f, fieldnames=['pollster', 'date', 'sample', 'scenario'] + CANDIDATES + ['notes'])
+            w.writeheader()
+            for p in polls:
+                w.writerow(p)
+        print(f"Parsed {len(polls)} scenario-rows")

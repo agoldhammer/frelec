@@ -5,9 +5,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## What this repo is
 
 A small scraper/parser that turns French Wikipedia's wikitext poll tables for
-the 2027 French presidential election into clean CSV. There is no build
-system, package manifest, or test suite — just `parse_polls.py` (stdlib only:
-`re`, `csv`, `sys`) and the `data/` output.
+the 2027 French presidential election into clean CSV, plus matplotlib
+visualizations. There is no build system, package manifest for the parser, or
+test suite — just `parse_polls.py` (stdlib only: `re`, `csv`, `sys`,
+`unicodedata`) and the `data/` output. `visualize_polls.py` and
+`visualize_second_round.py` (uv/matplotlib) render the CSVs to PNG.
 
 Source page: [Liste de sondages sur l'élection présidentielle française de 2027](https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027).
 
@@ -23,11 +25,14 @@ curl -s "https://fr.wikipedia.org/w/index.php?title=Liste_de_sondages_sur_l%27%C
 Parse a wikitext file (or extracted section) into CSV:
 
 ```
-python3 parse_polls.py <input.wiki> <output.csv>
+python3 parse_polls.py <input.wiki> <output.csv>                  # first round
+python3 parse_polls.py <input.wiki> <output.csv> --second-round   # second round (runoff)
 ```
 
 There is no test suite; verify changes by re-running the parser against a
-known wiki excerpt and diffing the resulting CSV against `data/polls_2027_presidential_first_round.csv`.
+known wiki excerpt and diffing the resulting CSV against
+`data/polls_2027_presidential_first_round.csv` or
+`data/polls_2027_second_round.csv`.
 
 ## Architecture: `parse_polls.py`
 
@@ -57,6 +62,36 @@ and output rows:
 - `CANDIDATES` is the fixed, ordered list of output columns and must match the
   column order of the wikitable being parsed — if Wikipedia reorders or
   adds/removes candidate columns, update this list to match before re-parsing.
+
+The `== Sondages concernant le second tour ==` section is a different shape —
+one small standalone wikitable per `=== Hypothèse X – Y ===` heading (a
+runoff match-up), no rowspan grouping. `parse_second_round_rows` (invoked via
+`--second-round`) handles this: `HYPOTHESIS_RE` splits the section into
+per-match-up tables, `HEADER_NAME_RE` pulls each contender's name and party
+out of the table's column-header cells, and `slugify` turns those into the
+same `Name_PARTY` key style as `CANDIDATES` (accent-stripped, ASCII-only) so
+challengers who also appear in the first-round table share a key (e.g.
+`Attal_RE`). Event/annotation rows in these tables (Le Pen's legal-status
+changes) are single-line rows carrying a bare `colspan` attribute, detected
+by `is_second_round_event_row` — a different heuristic from `is_event_row`
+because the runoff tables are narrower and don't use the 13–19 colspan range.
+
+## Visualizations
+
+`visualize_polls.py` reads `data/polls_2027_presidential_first_round.csv` and
+renders three PNGs: the overall trend (Gaussian-smoothed per candidate), a
+recent-period zoom (`--recent-days`), and a per-pollster comparison (latest
+poll per institute + a smoothed-average row). `visualize_second_round.py`
+reads `data/polls_2027_second_round.csv` and renders a trend chart (each
+challenger's share against whichever RN candidate they were polled against)
+and a snapshot chart (most recent poll per match-up, as a stacked bar split
+at the 50% majority line). Both scripts share the `SERIES` color/label map
+and `THEMES` (light/dark) from `visualize_polls.py`, so a candidate's color
+is consistent across every chart in the repo — reuse those rather than
+hand-rolling new colors for a candidate who already appears elsewhere. Any
+genuinely new color (e.g. Ruffin, who only appears in runoff polls) must be
+checked with the dataviz skill's `scripts/validate_palette.js` against the
+existing set before use.
 
 ## Data conventions (`data/`)
 
