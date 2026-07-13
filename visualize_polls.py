@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Plot smoothed polling trends for the 2027 French presidential first round.
 
-Reads data/polls_2027_presidential_first_round.csv (one row per poll
+Reads polls_2027_presidential_first_round.csv (one row per poll
 scenario), averages scenarios within each poll, then smooths each candidate's
 series with a Gaussian kernel over time (default sigma = 15 days). Raw
 per-scenario values are drawn as faint dots behind the trend lines.
@@ -22,7 +22,7 @@ matplotlib.use("Agg")
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 
-CSV_PATH = "data/polls_2027_presidential_first_round.csv"
+CSV_PATH = "polls_2027_presidential_first_round.csv"
 POLL_YEAR = 2026
 
 FRENCH_MONTHS = {

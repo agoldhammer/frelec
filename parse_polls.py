@@ -56,6 +56,13 @@ def parse_value_cell(raw):
         val = None
     else:
         val = main.replace(',', '.').replace(' ', '')
+        # Wikipedia occasionally reports a share as an upper bound ("<1").
+        # Encode it as the midpoint of [0, bound) and keep the original
+        # reading in the notes column.
+        m = re.fullmatch(r'<(\d+(?:\.\d+)?)', val)
+        if m:
+            val = str(float(m.group(1)) / 2)
+            note = f"reported as {main}" if note is None else f"{note}; reported as {main}"
     return val, note, colspan
 
 def is_event_row(lines):

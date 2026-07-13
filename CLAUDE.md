@@ -8,8 +8,8 @@ A small scraper/parser that turns French Wikipedia's wikitext poll tables for
 the 2027 French presidential election into clean CSV, plus matplotlib
 visualizations. There is no build system, package manifest for the parser, or
 test suite — just `parse_polls.py` (stdlib only: `re`, `csv`, `sys`,
-`unicodedata`) and the `data/` output. `visualize_polls.py` and
-`visualize_second_round.py` (uv/matplotlib) render the CSVs to PNG.
+`unicodedata`) and the CSVs it writes in the repo root. `visualize_polls.py`
+and `visualize_second_round.py` (uv/matplotlib) render the CSVs to PNG.
 
 Source page: [Liste de sondages sur l'élection présidentielle française de 2027](https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027).
 
@@ -31,8 +31,7 @@ python3 parse_polls.py <input.wiki> <output.csv> --second-round   # second round
 
 There is no test suite; verify changes by re-running the parser against a
 known wiki excerpt and diffing the resulting CSV against
-`data/polls_2027_presidential_first_round.csv` or
-`data/polls_2027_second_round.csv`.
+`polls_2027_presidential_first_round.csv` or `polls_2027_second_round.csv`.
 
 ## Architecture: `parse_polls.py`
 
@@ -78,11 +77,11 @@ because the runoff tables are narrower and don't use the 13–19 colspan range.
 
 ## Visualizations
 
-`visualize_polls.py` reads `data/polls_2027_presidential_first_round.csv` and
+`visualize_polls.py` reads `polls_2027_presidential_first_round.csv` and
 renders three PNGs: the overall trend (Gaussian-smoothed per candidate), a
 recent-period zoom (`--recent-days`), and a per-pollster comparison (latest
 poll per institute + a smoothed-average row). `visualize_second_round.py`
-reads `data/polls_2027_second_round.csv` and renders a trend chart (each
+reads `polls_2027_second_round.csv` and renders a trend chart (each
 challenger's share against whichever RN candidate they were polled against)
 and a snapshot chart (most recent poll per match-up, as a stacked bar split
 at the 50% majority line). Both scripts share the `SERIES` color/label map
@@ -93,10 +92,11 @@ genuinely new color (e.g. Ruffin, who only appears in runoff polls) must be
 checked with the dataviz skill's `scripts/validate_palette.js` against the
 existing set before use.
 
-## Data conventions (`data/`)
+## Data conventions
 
-See `data/README.md` for the full description of the current dataset. Key
-points to preserve when regenerating or extending it:
+Both CSVs live in the repo root. See README.md's "The dataset" section for
+the full description of the current dataset. Key points to preserve when
+regenerating or extending it:
 
 - One CSV row per scenario (not per poll); rows in the same poll share
   `pollster`/`date`/`sample` and are distinguished by `scenario` (1-indexed).

@@ -2,7 +2,7 @@
 """Plot second-round (runoff) hypothetical matchup polls for the 2027
 French presidential election.
 
-Reads data/polls_2027_second_round.csv (one row per poll per matchup, e.g.
+Reads polls_2027_second_round.csv (one row per poll per matchup, e.g.
 "Attal vs. Bardella") and renders two charts:
 
 - a trend chart: each challenger's share against the RN candidate (whether
@@ -27,7 +27,7 @@ import matplotlib.pyplot as plt
 
 from visualize_polls import FRENCH_MONTHS, SERIES, THEMES, spread_labels
 
-CSV_PATH = "data/polls_2027_second_round.csv"
+CSV_PATH = "polls_2027_second_round.csv"
 
 # Reuse first-round colors for challengers that also appear in the
 # first-round palette; Ruffin only runs in the runoff tables, so he gets a

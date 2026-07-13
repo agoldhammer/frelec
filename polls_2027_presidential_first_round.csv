@@ -1,4 +1,14 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
+Elabe,9-10 juillet,1503,1,1,16,2.5,3.5,10.5,,16.5,2.5,8,1.5,35,3,,
+Elabe,9-10 juillet,1503,2,1.5,14.5,2.5,3.5,11,13.5,,3.5,11,1.5,34,3.5,,
+Elabe,9-10 juillet,1503,3,1.5,14.5,2,,9,,19,,9,1.5,35,2.5,6,Glucksmann_PP=9.0 (Hollande (PS)); Autre=6.0 (Ruffin)
+Elabe,9-10 juillet,1503,4,1.5,15,2.5,,8,15.5,,,11,1.5,35.5,3.5,6,Glucksmann_PP=8.0 (Hollande (PS)); Autre=6.0 (Ruffin)
+Elabe,9-10 juillet,1503,5,1,14.5,2.5,4,8.5,7.5,14,,8.5,1.5,35,3,,
+Elabe,9-10 juillet,1503,6,2,15,3,4,8,,18,3,8,1.5,34.5,3,,Glucksmann_PP=8.0 (Hollande (PS))
+Verian,8-10 juillet,1047,1,,15,2,,11,8,17,,7,,37,3,,
+OpinionWay,8-9 juillet,963,1,0.5,13,2,5,9,7,18,,8,,35,3,,Arthaud_LO=0.5 (reported as <1)
+OpinionWay,8-9 juillet,963,2,1,15,2,5,10,16,,,12,,36,3,,
+OpinionWay,8-9 juillet,963,3,1,15,2,4,9,,22,,9,,34,4,,
 Ifop,7-8 juillet,984,1,0.5,15,2,4,12,15,,,10,2,36,3.5,,
 Ifop,7-8 juillet,984,2,0.5,15,3,3.5,9,,19,,8,2,36,4,,
 Harris Interactive,7-8 juillet,1592,1,1,16,3,5,8,16,,,8,2,36,5,,Glucksmann_PP=8.0 (Hollande (PS))
