@@ -131,8 +131,17 @@ def parse_rows(text):
 # there's no rowspan grouping (one wiki row = one poll), so this reuses
 # strip_attrs/clean_text/parse_value_cell but not parse_rows's rowspan
 # bookkeeping.
-
-HYPOTHESIS_RE = re.compile(r'=== Hypothèse (.+?) ===\n(.*?\n\|\})', re.DOTALL)
+#
+# The heading depth is not stable: in July 2026 Wikipedia regrouped the
+# Hypothèse subsections under "=== Impliquant Marine Le Pen ===" /
+# "=== Impliquant Jordan Bardella ===" parents and demoted them from ===
+# to ====. Accept either depth, and anchor the heading to its own line --
+# with re.DOTALL an unanchored "(.+?) ===" happily runs past the end of
+# the line looking for the next ===-terminated heading, which silently
+# swallowed whole subsections (45 rows -> 4) rather than failing loudly.
+HYPOTHESIS_RE = re.compile(
+    r'(?m)^={3,4} Hypothèse ([^\n]+?) ={3,4}$\n(.*?\n\|\})', re.DOTALL
+)
 # Column header cells look like:
 #   [[Jean-Luc Mélenchon|Mélenchon]]<br><small>([[La France insoumise|LFI]])</small>
 HEADER_NAME_RE = re.compile(
