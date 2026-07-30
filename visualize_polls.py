@@ -271,7 +271,7 @@ def plot_pollsters(records, theme, dark, sigma, out):
         for cand, pts in poll_means.items()
     }
 
-    rows = sorted(latest.items(), key=lambda kv: kv[1].get("RN", 0))
+    rows = sorted(latest.items(), key=lambda kv: kv[1]["date"])
     rows = [(f"{pollster}  ({rec['date']:%d %b})", rec) for pollster, rec in rows]
     rows.append((f"Moyenne lissée (σ={sigma:.0f} j)", avg))
 
@@ -321,7 +321,7 @@ def plot_pollsters(records, theme, dark, sigma, out):
               fontsize=14, color=theme["ink"], fontweight="semibold", va="top")
     fig.text(0.03, 0.925,
               f"Dernier sondage de chaque institut, au {end_date:%d %b %Y} · "
-              "trié par score RN · scénarios moyennés par sondage",
+              "trié par date de sondage · scénarios moyennés par sondage",
               fontsize=9, color=theme["secondary"], va="top")
     fig.text(0.99, 0.015,
               "Source : Wikipédia, « Liste de sondages sur l'élection "

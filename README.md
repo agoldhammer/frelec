@@ -15,20 +15,26 @@ in `pyproject.toml`):
 
 ```
 # First round: overall trend, recent-period trend, and per-pollster comparison
-uv run python visualize_polls.py            # light theme → france-first_round[_recent|_pollsters].png
-uv run python visualize_polls.py --dark     # dark theme  → …_dark.png
+uv run python visualize_polls.py            # france-first_round[_recent|_pollsters].png
 uv run python visualize_polls.py --sigma 10 -o custom.png
 uv run python visualize_polls.py --recent-days 30
 
 # Second round: runoff trend by challenger, and latest-poll-per-matchup snapshot
-uv run python visualize_second_round.py            # light theme → france-second_round_trend.png, …_snapshot.png
-uv run python visualize_second_round.py --dark      # dark theme  → …_dark.png
+uv run python visualize_second_round.py            # france-second_round_trend.png, …_snapshot.png
 ```
+
+Both scripts still take `--dark`, but nothing uses its output any more: the
+poll site renders each chart inside its own themed viewer page rather than
+serving a separately generated dark PNG, so as of 2026-07-29 the five
+`…_dark.png` files are gone from this repo and from the server, and the daily
+update no longer regenerates them. `--dark` is kept for one-off local use; if
+you run it, do not commit or deploy the result.
 
 First-round scenarios are averaged within each poll, then each candidate's
 series is smoothed with a Gaussian kernel over time (`--sigma` days, default
 15). Faint dots show raw per-scenario values. The pollster-comparison chart
-shows each institute's latest poll plus a smoothed-average row. The
+shows each institute's latest poll, ordered by poll date, plus a
+smoothed-average row. The
 second-round trend chart plots each challenger's own share against the RN
 candidate (Bardella or Le Pen) over time; the snapshot chart shows the most
 recent poll for each hypothetical match-up.
