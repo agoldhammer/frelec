@@ -42,7 +42,9 @@ implemented via `rowspan` on the pollster/date/sample cells. The parser has to
 reconstruct that grouping itself — there's no 1:1 mapping between wiki rows
 and output rows:
 
-- `parse_rows` splits the wikitext on `|-` into row blocks, skips header rows
+- `parse_rows` splits the input into wikitables, reads each one's own columns
+  off its header (`table_columns`), and parses its rows (`parse_table`).
+  `parse_table` splits the table on `|-` into row blocks, skips header rows
   (`!`) and full-width event-annotation rows (`is_event_row`), then tracks a
   `remaining` counter driven by the pollster cell's `rowspan` attribute to
   know how many subsequent wiki rows belong to the current pollster/date/sample
@@ -58,9 +60,34 @@ and output rows:
   note (e.g. a candidate substitution like "Bardella / Le Pen"); dashes/empty
   become `None`; `colspan` causes the same `None` to be back-filled across the
   candidates a merged cell spans.
-- `CANDIDATES` is the fixed, ordered list of output columns and must match the
-  column order of the wikitable being parsed — if Wikipedia reorders or
-  adds/removes candidate columns, update this list to match before re-parsing.
+- `table_columns` reads a table's candidate columns off its own header rather
+  than assuming a fixed list, because a year gets split into dated sub-tables
+  with **different** columns whenever a candidate enters or leaves the race
+  (2026 has "Premier semestre" with a Villepin column and "Second semestre"
+  without). The header is two stacked rows — portraits above, names and
+  parties below — plus cells like `Autre` that `rowspan` across both, so it
+  reconstructs the header grid honouring `rowspan`/`colspan` and takes the
+  deepest cell covering each column. `header_key` turns that cell into
+  `Name_PARTY`, or into the bare party for an un-named slot
+  (`Candidat<br>[[…|RN]]`), or into its plain text (`Autre`).
+- `CANDIDATES` is no longer a positional map onto any one table. It is the
+  canonical CSV column order plus the registry of candidates already known,
+  and new columns a table introduces are appended after it — add them to
+  `CANDIDATES` to give them their proper place. `FIRST_ROUND_ALIASES` folds
+  `LePen_RN`/`Bardella_RN` onto the `RN` column so the party's slot stays one
+  series across the placeholder→named switch; the second-round tables keep
+  those keys distinct on purpose.
+- `route_other` handles a candidate who loses their column but keeps being
+  polled: Wikipedia folds them into `Autre` and names them in a
+  `<br><small>` note, and the value is re-routed to the column that candidate
+  had while they had one, so the series doesn't break in two at the date the
+  column was dropped. Only `Autre` is re-routed — a note inside a candidate's
+  *own* column names a substitute for them (`Glucksmann_PP=9.0 (Hollande
+  (PS))`) and stays put. A note naming somebody with no column at all
+  (Ruffin) also stays put.
+- A column set that differs from `CANDIDATES` is reported on stderr
+  (`report_column_changes`). The parse handles it, but a candidate entering or
+  leaving the race should still be audible.
 
 The `== Sondages concernant le second tour ==` section is a different shape —
 one small standalone wikitable per `=== Hypothèse X – Y ===` heading (a
@@ -72,8 +99,10 @@ same `Name_PARTY` key style as `CANDIDATES` (accent-stripped, ASCII-only) so
 challengers who also appear in the first-round table share a key (e.g.
 `Attal_RE`). Event/annotation rows in these tables (Le Pen's legal-status
 changes) are single-line rows carrying a bare `colspan` attribute, detected
-by `is_second_round_event_row` — a different heuristic from `is_event_row`
-because the runoff tables are narrower and don't use the 13–19 colspan range.
+by `is_second_round_event_row` — a different heuristic from `is_event_row`,
+which tests the colspan against the table's real candidate count (Wikipedia
+is loose here: the same section carries `colspan="19"` and `colspan="16"`
+annotation rows over 15- and 16-column tables).
 
 ## Visualizations
 

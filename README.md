@@ -58,12 +58,21 @@ Wikipedia article
 ["Liste de sondages sur l'élection présidentielle française de 2027"](https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027)
 (pulled 2026-07-13).
 
-Starting with the 7–8 July 2026 polls, Wikipedia's table switched the RN column
-from a hypothetical "candidate" placeholder to Marine Le Pen by name, and
-dropped the Dominique de Villepin and "Autre" columns — Le Pen officially
-declared her candidacy on 2026-07-07 (her period of ineligibility having been
-reduced on appeal), and Villepin no longer appears as a tracked candidate in
-these polls. Those two columns are blank for all rows from that date onward.
+Starting with the 7–8 July 2026 polls (Wikipedia's "Second semestre 2026"
+sub-table), the table switched the RN column from a hypothetical "candidate"
+placeholder to Marine Le Pen by name and dropped the Dominique de Villepin
+column — Le Pen officially declared her candidacy on 2026-07-07, her period of
+ineligibility having been reduced on appeal. Both tables' columns are read
+from their own headers, so the RN series continues unbroken across the
+rename, and the `Villepin_LFH` column is simply blank in the rows where the
+sub-table has no Villepin column.
+
+Pollsters kept testing Villepin after he lost his column, and Wikipedia
+reports him inside the "Autre" cell with a small note naming him. The parser
+routes those values back into `Villepin_LFH` rather than leaving them in
+`Autre`, so his series doesn't break in two on 7 July. An "Autre" value whose
+note names somebody who never had a column of their own — Ruffin, in the
+9–10 July Elabe scenarios — stays in `Autre`, with the name kept in `notes`.
 
 Each poll is published with several "scenarios" (different hypothetical candidate
 line-ups, e.g. Attal vs. Philippe running, or Le Pen vs. Bardella as the RN
