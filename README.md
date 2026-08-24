@@ -53,10 +53,10 @@ python3 parse_polls.py /tmp/frelec_raw.wiki polls_2027_second_round.csv --second
 
 ### `polls_2027_presidential_first_round.csv`
 
-First-round voting-intention polls, January–July 2026, scraped from the French
+First-round voting-intention polls, January–August 2026, scraped from the French
 Wikipedia article
 ["Liste de sondages sur l'élection présidentielle française de 2027"](https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027)
-(pulled 2026-07-13).
+(pulled 2026-08-24).
 
 Starting with the 7–8 July 2026 polls (Wikipedia's "Second semestre 2026"
 sub-table), the table switched the RN column from a hypothetical "candidate"
@@ -84,9 +84,8 @@ Lecornu, etc.). A share Wikipedia reports only as an upper bound (e.g. `<1`)
 is encoded as the midpoint of that bound (`0.5`), with the original reading
 kept in `notes`.
 
-Latest polls: Elabe (n=1503, 9–10 July), Verian (n=1047, 8–10 July) and
-OpinionWay (n=963, 8–9 July 2026) — RN (Le Pen) 34–37%, Mélenchon 13–16%,
-Philippe 14–22%, Attal 7–16%, Glucksmann 8–11%, Retailleau 7–12%.
+Latest poll: Harris (n=1764, 18–19 August) — RN (Le Pen) 35–38%, Mélenchon
+16–17%, Philippe 14–19%, Attal 8–15%, Glucksmann 8–11%, Retailleau 6–9%.
 
 Caveat (per Wikipedia, citing Le Monde): polls taken a year-plus before a French
 presidential election have historically been poor predictors — in 2022 LFI
@@ -97,9 +96,9 @@ included in this CSV — ask if you want those pulled too.
 
 ### `polls_2027_second_round.csv`
 
-Second-round (runoff) hypothetical match-up polls, January 2024 – July 2026,
+Second-round (runoff) hypothetical match-up polls, January 2024 – August 2026,
 scraped from the same Wikipedia page's "Sondages concernant le second tour"
-section (pulled 2026-07-13). Each subsection there ("Hypothèse X – Y") polls
+section (pulled 2026-08-24). Each subsection there ("Hypothèse X – Y") polls
 one specific pairing — Attal, Mélenchon, Philippe, Glucksmann and Retailleau
 each against the RN candidate (Bardella through early 2026, Le Pen from her
 2026-07-07 candidacy onward), plus a single early Ruffin–Le Pen poll.

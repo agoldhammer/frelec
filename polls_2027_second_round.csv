@@ -1,4 +1,5 @@
 matchup,candidate_a,candidate_b,pollster,date,sample,pct_a,pct_b
+Attal_RE-LePen_RN,Attal_RE,LePen_RN,Harris,18 - 19 août 2026,1764,43,57
 Attal_RE-LePen_RN,Attal_RE,LePen_RN,Elabe,9 - 10 juillet 2026,1503,46,54
 Attal_RE-LePen_RN,Attal_RE,LePen_RN,Ifop,7 - 8 juillet 2026,984,45,55
 Attal_RE-LePen_RN,Attal_RE,LePen_RN,Harris,7 - 8 juillet 2026,1592,45,55
@@ -7,12 +8,14 @@ Attal_RE-LePen_RN,Attal_RE,LePen_RN,Elabe,25 - 27 mars 2026,1504,49,51
 Attal_RE-LePen_RN,Attal_RE,LePen_RN,Ifop,16 - 18 avril 2024,1093,47,53
 Attal_RE-LePen_RN,Attal_RE,LePen_RN,Ifop,31 janvier - 1er février 2024,1081,49,51
 Glucksmann_PP-LePen_RN,Glucksmann_PP,LePen_RN,Elabe,9 - 10 juillet 2026,1503,41.5,58.5
+Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Harris,18 - 19 août 2026,1764,32,68
 Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Elabe,9 - 10 juillet 2026,1503,32.5,67.5
 Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Ifop,7 - 8 juillet 2026,984,30,70
 Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Harris,7 - 8 juillet 2026,1592,33,67
 Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Harris,25 - 27 mai 2026,1744,33,67
 Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Cluster 17,2 - 5 avril 2024,1713,35,65
 Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Ifop,31 janvier - 1er février 2024,1081,36,64
+Philippe_HOR-LePen_RN,Philippe_HOR,LePen_RN,Harris,18 - 19 août 2026,1764,45,55
 Philippe_HOR-LePen_RN,Philippe_HOR,LePen_RN,Elabe,9 - 10 juillet 2026,1503,48,52
 Philippe_HOR-LePen_RN,Philippe_HOR,LePen_RN,Ifop,7 - 8 juillet 2026,984,46,54
 Philippe_HOR-LePen_RN,Philippe_HOR,LePen_RN,Harris,7 - 8 juillet 2026,1592,49,51

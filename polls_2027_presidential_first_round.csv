@@ -1,4 +1,9 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
+Harris,18-19 août,1764,1,1,17,3,4,8,14,,,9,2,38,4,,Glucksmann_PP=8.0 (Hollande (PS))
+Harris,18-19 août,1764,2,1,17,3,4,8,,19,,7,2,35,4,,Glucksmann_PP=8.0 (Hollande (PS))
+Harris,18-19 août,1764,3,1,17,2,3,11,15,,,9,2,37,3,,
+Harris,18-19 août,1764,4,1,17,3,3,10,,17,,7,3,35,4,,
+Harris,18-19 août,1764,5,1,16,2,3,10,8,14,,6,2,35,3,,
 Elabe,9-10 juillet,1503,1,1,16,2.5,3.5,10.5,,16.5,2.5,8,1.5,35,3,,
 Elabe,9-10 juillet,1503,2,1.5,14.5,2.5,3.5,11,13.5,,3.5,11,1.5,34,3.5,,
 Elabe,9-10 juillet,1503,3,1.5,14.5,2,,9,,19,,9,1.5,35,2.5,6,Glucksmann_PP=9.0 (Hollande (PS)); Autre=6.0 (Ruffin)
