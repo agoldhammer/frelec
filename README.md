@@ -56,7 +56,7 @@ python3 parse_polls.py /tmp/frelec_raw.wiki polls_2027_second_round.csv --second
 First-round voting-intention polls, January–August 2026, scraped from the French
 Wikipedia article
 ["Liste de sondages sur l'élection présidentielle française de 2027"](https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027)
-(pulled 2026-08-24).
+(pulled 2026-08-27).
 
 Starting with the 7–8 July 2026 polls (Wikipedia's "Second semestre 2026"
 sub-table), the table switched the RN column from a hypothetical "candidate"
@@ -84,8 +84,10 @@ Lecornu, etc.). A share Wikipedia reports only as an upper bound (e.g. `<1`)
 is encoded as the midpoint of that bound (`0.5`), with the original reading
 kept in `notes`.
 
-Latest poll: Harris (n=1764, 18–19 August) — RN (Le Pen) 35–38%, Mélenchon
-16–17%, Philippe 14–19%, Attal 8–15%, Glucksmann 8–11%, Retailleau 6–9%.
+Latest poll: Ifop (n=1598, 24–25 August) — RN (Le Pen) 33–35%, Mélenchon
+16–19%, Philippe 14.5–21%, Glucksmann 11–18%, Attal 8–15%, Retailleau 6–12%
+(the scenarios standing Hollande in for Glucksmann and Le Maire in for Attal
+are left out of those two ranges).
 
 Caveat (per Wikipedia, citing Le Monde): polls taken a year-plus before a French
 presidential election have historically been poor predictors — in 2022 LFI
@@ -98,10 +100,11 @@ included in this CSV — ask if you want those pulled too.
 
 Second-round (runoff) hypothetical match-up polls, January 2024 – August 2026,
 scraped from the same Wikipedia page's "Sondages concernant le second tour"
-section (pulled 2026-08-24). Each subsection there ("Hypothèse X – Y") polls
+section (pulled 2026-08-27). Each subsection there ("Hypothèse X – Y") polls
 one specific pairing — Attal, Mélenchon, Philippe, Glucksmann and Retailleau
 each against the RN candidate (Bardella through early 2026, Le Pen from her
-2026-07-07 candidacy onward), plus a single early Ruffin–Le Pen poll.
+2026-07-07 candidacy onward), plus a single early Ruffin–Le Pen poll and, from
+Ifop's 24–25 August 2026 poll, a first Hollande–Le Pen match-up.
 
 One CSV row per poll: `matchup` (`candidate_a-candidate_b`, e.g.
 `Attal_RE-Bardella_RN`), `candidate_a`/`candidate_b` (the two contenders,

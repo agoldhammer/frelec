@@ -30,11 +30,11 @@ from visualize_polls import FRENCH_MONTHS, SERIES, THEMES, spread_labels
 CSV_PATH = "polls_2027_second_round.csv"
 
 # Reuse first-round colors for challengers that also appear in the
-# first-round palette; Ruffin only runs in the runoff tables, so he gets a
-# new slot validated with scripts/validate_palette.js against that same
-# 8-color set (light: chroma/lightness/CVD all PASS; dark: CVD separation
-# WARN in the 8-12 floor band, acceptable because this chart direct-labels
-# every line).
+# first-round palette; Ruffin and Hollande only run in the runoff tables, so
+# they get new slots validated with scripts/validate_palette.js against that
+# same 8-color set (Ruffin light: chroma/lightness/CVD all PASS; dark: CVD
+# separation WARN in the 8-12 floor band, acceptable because this chart
+# direct-labels every line).
 CHALLENGERS = {
     "Attal_RE":       SERIES["Attal_RE"],
     "Philippe_HOR":   SERIES["Philippe_HOR"],
@@ -42,6 +42,14 @@ CHALLENGERS = {
     "Glucksmann_PP":  SERIES["Glucksmann_PP"],
     "Retailleau_LR":  SERIES["Retailleau_LR"],
     "Ruffin_D":       ("Ruffin (D!)", "#8a5a13", "#b8863d"),
+    # Hollande's rose-magenta was picked by sweeping OKLCH hue/lightness/chroma
+    # against the nine committed series colors: worst pair light dE 11.3
+    # (vs. Ruffin), dark dE 8.3 (vs. Philippe; 7.4 vs. Zemmour, who never
+    # appears in a runoff table). Lightness band, chroma floor and contrast
+    # all PASS in both modes. The all-pairs FAILs the validator still reports
+    # for the whole set are the pre-existing Ruffin/Attal (light) and
+    # RN/Glucksmann, Ruffin/Melenchon (dark) pairs, not this slot.
+    "Hollande_PS":    ("Hollande (PS)", "#991b5e", "#b43d83"),
 }
 
 RN_CANDIDATES = {
