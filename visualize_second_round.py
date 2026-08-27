@@ -196,7 +196,7 @@ def plot_runoff_snapshot(rows, theme, dark, out_path):
     matchups = sorted(latest.values(),
                        key=lambda r: (order_b.get(r["candidate_b"], 2), r["pct_b"]))
 
-    fig, ax = plt.subplots(figsize=(10.5, 0.95 * len(matchups) + 1.6), dpi=160)
+    fig, ax = plt.subplots(figsize=(10.5, 1.05 * len(matchups) + 1.6), dpi=160)
     fig.patch.set_facecolor(theme["page"])
     ax.set_facecolor(theme["surface"])
 
@@ -206,18 +206,18 @@ def plot_runoff_snapshot(rows, theme, dark, out_path):
         chal_color = chal_dark if dark else chal_light
         rn_color = rn_dark if dark else rn_light
 
-        ax.barh(y, r["pct_a"], left=0, height=0.6, color=chal_color,
+        ax.barh(y, r["pct_a"], left=0, height=0.68, color=chal_color,
                 edgecolor=theme["surface"], linewidth=2, zorder=2)
-        ax.barh(y, r["pct_b"], left=r["pct_a"], height=0.6, color=rn_color,
+        ax.barh(y, r["pct_b"], left=r["pct_a"], height=0.68, color=rn_color,
                 edgecolor=theme["surface"], linewidth=2, zorder=2)
 
         ax.annotate(f"{chal_name}  {r['pct_a']:.0f}", (r["pct_a"] / 2, y),
-                    ha="center", va="center", fontsize=9.5, color="#ffffff")
+                    ha="center", va="center", fontsize=13, color="#ffffff")
         ax.annotate(f"{rn_name}  {r['pct_b']:.0f}",
                     (r["pct_a"] + r["pct_b"] / 2, y),
-                    ha="center", va="center", fontsize=9.5, color="#ffffff")
+                    ha="center", va="center", fontsize=13, color="#ffffff")
         ax.annotate(f"{r['pollster']} · {r['date']:%d %b %Y}", (0, y),
-                    xytext=(0, 22), textcoords="offset points",
+                    xytext=(0, 27), textcoords="offset points",
                     va="center", fontsize=9, color=theme["secondary"])
 
     ax.axvline(50, color=theme["ink"], linewidth=1, linestyle=(0, (4, 3)))
@@ -226,7 +226,7 @@ def plot_runoff_snapshot(rows, theme, dark, out_path):
                 ha="center", fontsize=9, color=theme["ink"])
 
     ax.set_xlim(0, 100)
-    ax.set_ylim(-0.6, len(matchups) - 0.35)
+    ax.set_ylim(-0.62, len(matchups) - 0.3)
     ax.set_yticks([])
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0f}%")
     ax.xaxis.grid(True, color=theme["grid"], linewidth=1.0)
