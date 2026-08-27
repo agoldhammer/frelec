@@ -37,7 +37,12 @@ shows each institute's latest poll, ordered by poll date, plus a
 smoothed-average row. The
 second-round trend chart plots each challenger's own share against the RN
 candidate (Bardella or Le Pen) over time; the snapshot chart shows the most
-recent poll for each hypothetical match-up.
+recent poll for each hypothetical match-up **against Le Pen**. Bardella's
+match-ups are left out of the snapshot — he stopped being the RN candidate
+when Le Pen declared on 2026-07-07, and the snapshot is a picture of the race
+as it stands. They stay in the CSV and on the trend chart, where each point
+is read against whoever the RN candidate was at the time. The set is
+`SNAPSHOT_RN_CANDIDATES` in `visualize_second_round.py`.
 
 ### Parser (stdlib only, no uv needed)
 

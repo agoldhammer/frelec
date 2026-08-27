@@ -113,7 +113,8 @@ poll per institute + a smoothed-average row). `visualize_second_round.py`
 reads `polls_2027_second_round.csv` and renders a trend chart (each
 challenger's share against whichever RN candidate they were polled against)
 and a snapshot chart (most recent poll per match-up, as a stacked bar split
-at the 50% majority line). Both scripts share the `SERIES` color/label map
+at the 50% majority line, restricted to the RN candidates in
+`SNAPSHOT_RN_CANDIDATES` — Le Pen only, since Bardella is no longer running). Both scripts share the `SERIES` color/label map
 and `THEMES` (light/dark) from `visualize_polls.py`, so a candidate's color
 is consistent across every chart in the repo — reuse those rather than
 hand-rolling new colors for a candidate who already appears elsewhere. Any

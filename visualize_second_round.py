@@ -57,6 +57,12 @@ RN_CANDIDATES = {
     "LePen_RN":    ("Le Pen", SERIES["RN"][1], SERIES["RN"][2]),
 }
 
+# The snapshot is a picture of the race as it stands, and Bardella stopped
+# being the RN candidate when Le Pen declared on 2026-07-07, so his match-ups
+# are left out of it. They stay in the CSV and on the trend chart, where each
+# point is read against whoever the RN candidate was at the time.
+SNAPSHOT_RN_CANDIDATES = ("LePen_RN",)
+
 # Le Pen's shifting legal/candidacy status, relevant to every matchup
 # against RN in this dataset.
 EVENTS = {
@@ -190,11 +196,17 @@ def plot_runoff_trend(rows, theme, dark, out_path):
 def plot_runoff_snapshot(rows, theme, dark, out_path):
     latest = {}
     for r in rows:
+        if r["candidate_b"] not in SNAPSHOT_RN_CANDIDATES:
+            continue
         latest[r["matchup"]] = r  # rows sorted ascending by date; last wins
 
-    order_b = {"LePen_RN": 0, "Bardella_RN": 1}
+    if not latest:
+        sys.exit("no matchups left for the snapshot — check "
+                 "SNAPSHOT_RN_CANDIDATES against the CSV's candidate_b values")
+
+    order_b = {key: i for i, key in enumerate(SNAPSHOT_RN_CANDIDATES)}
     matchups = sorted(latest.values(),
-                       key=lambda r: (order_b.get(r["candidate_b"], 2), r["pct_b"]))
+                       key=lambda r: (order_b.get(r["candidate_b"], 99), r["pct_b"]))
 
     fig, ax = plt.subplots(figsize=(10.5, 1.05 * len(matchups) + 1.6), dpi=160)
     fig.patch.set_facecolor(theme["page"])
@@ -240,7 +252,8 @@ def plot_runoff_snapshot(rows, theme, dark, out_path):
              "Présidentielle 2027 — second tour, dernier sondage par hypothèse",
              fontsize=14, color=theme["ink"], fontweight="semibold", va="top")
     fig.text(0.045, 0.925,
-             "Chaque barre = le sondage le plus récent pour ce duel · "
+             "Chaque barre = le sondage le plus récent face à Marine Le Pen, "
+             "candidate du RN depuis le 7 juillet 2026 · "
              "trait pointillé = seuil de majorité (50 %)",
              fontsize=9, color=theme["secondary"], va="top")
     fig.text(0.99, 0.015,
