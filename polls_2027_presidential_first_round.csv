@@ -1,4 +1,10 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
+Elabe,26-28 août,1501,1,1.5,14,3,3.5,11.5,,17,2,6.5,3,34,4,,
+Elabe,26-28 août,1501,2,1.5,14,3,3,14,12,,2.5,9.5,2,34.5,4,,
+Elabe,26-28 août,1501,3,2,14,3.5,4,7.5,,19.5,,6,2.5,34,4,3,"Glucksmann_PP=7.5 (Hollande (PS)); Autre=3.0 (Lisnard)"
+Elabe,26-28 août,1501,4,1.5,14,4,,8,12.5,,,9,2.5,34.5,4.5,9.5,"Glucksmann_PP=8.0 (Hollande (PS)); Autre=9.5 (Ruffin (6); Lisnard (3.5))"
+Elabe,26-28 août,1501,5,1.5,14.5,4.5,4,3.5,,20.5,2.5,7,2.5,35.5,4,,Glucksmann_PP=3.5 (Faure (PS))
+Elabe,26-28 août,1501,6,1.5,14.5,3,,12.5,6.5,14.5,,7,2.5,34,4,,
 Ifop,24-25 août,1598,1,0.5,16,3,3,11,8,14.5,,6,1.5,33,3.5,,
 Ifop,24-25 août,1598,2,1,17,3,3,12,,18,,8,1.5,33,3.5,,
 Ifop,24-25 août,1598,3,0.5,17,3,3,15,14,,,9,1.5,34,3,,

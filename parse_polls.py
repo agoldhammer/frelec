@@ -77,6 +77,27 @@ def parse_value_cell(raw):
     content = strip_attrs(raw)
     content = clean_text(content)
     colspan = get_attr_int(raw, 'colspan') or 1
+    if '<hr' in content:
+        # Rare shape: the cell stacks two named sub-values -- two different
+        # substitutes for the same slot, each polled separately -- divided by
+        # <hr>, rather than one value plus a note naming a single substitute.
+        # Sum the values into the column's main figure, and record each
+        # substitute as "Name (value)" so the combined note still reads like
+        # the single-substitute case route_other expects (it strips a
+        # trailing "(...)" before comparing a note segment to a known name).
+        total, parts = 0.0, []
+        for seg in re.split(r'<hr\s*/?>', content):
+            seg = seg.strip()
+            if '<br' in seg:
+                v_str, rest = re.split(r'<br\s*/?>', seg, maxsplit=1)
+                name = re.sub(r'</?small>', '', rest).strip()
+            else:
+                v_str, name = seg, ''
+            v_str = v_str.strip().replace(',', '.').replace(' ', '')
+            if v_str:
+                total += float(v_str)
+            parts.append(f"{name} ({v_str})" if name else v_str)
+        return str(total), '; '.join(p for p in parts if p), colspan
     note = None
     if '<br' in content:
         parts = re.split(r'<br\s*/?>', content, maxsplit=1)

@@ -61,7 +61,7 @@ python3 parse_polls.py /tmp/frelec_raw.wiki polls_2027_second_round.csv --second
 First-round voting-intention polls, January–August 2026, scraped from the French
 Wikipedia article
 ["Liste de sondages sur l'élection présidentielle française de 2027"](https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027)
-(pulled 2026-08-27).
+(pulled 2026-08-30).
 
 Starting with the 7–8 July 2026 polls (Wikipedia's "Second semestre 2026"
 sub-table), the table switched the RN column from a hypothetical "candidate"
@@ -89,10 +89,10 @@ Lecornu, etc.). A share Wikipedia reports only as an upper bound (e.g. `<1`)
 is encoded as the midpoint of that bound (`0.5`), with the original reading
 kept in `notes`.
 
-Latest poll: Ifop (n=1598, 24–25 August) — RN (Le Pen) 33–35%, Mélenchon
-16–19%, Philippe 14.5–21%, Glucksmann 11–18%, Attal 8–15%, Retailleau 6–12%
-(the scenarios standing Hollande in for Glucksmann and Le Maire in for Attal
-are left out of those two ranges).
+Latest poll: Elabe (n=1501, 26–28 August) — RN (Le Pen) 34–35.5%, Mélenchon
+14–14.5%, Philippe 14.5–20.5%, Glucksmann 11.5–14%, Attal 6.5–12.5%,
+Retailleau 6–9.5% (the scenarios standing Hollande or Faure in for
+Glucksmann are left out of that range).
 
 Caveat (per Wikipedia, citing Le Monde): polls taken a year-plus before a French
 presidential election have historically been poor predictors — in 2022 LFI
