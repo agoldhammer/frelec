@@ -41,6 +41,10 @@ CHALLENGERS = {
     "Melenchon_LFI":  SERIES["Melenchon_LFI"],
     "Glucksmann_PP":  SERIES["Glucksmann_PP"],
     "Retailleau_LR":  SERIES["Retailleau_LR"],
+    # No Ruffin row survives the parser's exclusion list as of 2026-08-31 (his
+    # only match-up poll was ruled spurious); the slot stays so a later genuine
+    # one plots without a fresh palette hunt, and because Hollande's colour was
+    # derived against it.
     "Ruffin_D":       ("Ruffin (D!)", "#8a5a13", "#b8863d"),
     # Hollande's rose-magenta was picked by sweeping OKLCH hue/lightness/chroma
     # against the nine committed series colors: worst pair light dE 11.3

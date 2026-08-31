@@ -368,6 +368,20 @@ HYPOTHESIS_RE = re.compile(
     r'(?m)^={3,4} Hypothèse ([^\n]+?) ={3,4}$\n(.*?\n\|\})', re.DOTALL
 )
 
+# Runoff rows the owner has ruled spurious. Keyed by (matchup, pollster, date)
+# exactly as they appear in the CSV. The exclusion has to live here rather than
+# as a hand-edit of the CSV: every update replaces that file with a fresh parse
+# of the whole page, so a deleted row would come straight back the next morning.
+EXCLUDED_SECOND_ROUND_ROWS = {
+    # Cluster 17's 50-50 Ruffin - Le Pen of April 2024, commissioned by Ruffin's
+    # own Picardie Debout and the only row in its Hypothèse table: two years
+    # older than every other runoff poll in the dataset, and a party-commissioned
+    # test of its own candidate. Dropped at the owner's request 2026-08-31.
+    # This keys on the one row, not on the match-up, so a later genuine
+    # Ruffin - Le Pen poll would still flow in and get its palette slot.
+    ("Ruffin_D-LePen_RN", "Cluster 17", "2 - 5 avril 2024"),
+}
+
 def is_second_round_event_row(lines):
     return len(lines) == 1 and 'colspan' in lines[0]
 
@@ -403,8 +417,12 @@ def parse_second_round_rows(text):
             pct_a, _, _ = parse_value_cell(cells[3])
             pct_b, _, _ = parse_value_cell(cells[4])
 
+            matchup = f"{cand_a}-{cand_b}"
+            if (matchup, pollster, date) in EXCLUDED_SECOND_ROUND_ROWS:
+                continue
+
             rows.append({
-                'matchup': f"{cand_a}-{cand_b}",
+                'matchup': matchup,
                 'candidate_a': cand_a, 'candidate_b': cand_b,
                 'pollster': pollster, 'date': date, 'sample': sample,
                 'pct_a': pct_a, 'pct_b': pct_b,
