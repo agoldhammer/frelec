@@ -105,7 +105,7 @@ included in this CSV — ask if you want those pulled too.
 
 Second-round (runoff) hypothetical match-up polls, January 2024 – August 2026,
 scraped from the same Wikipedia page's "Sondages concernant le second tour"
-section (pulled 2026-08-27). Each subsection there ("Hypothèse X – Y") polls
+section (pulled 2026-08-31). Each subsection there ("Hypothèse X – Y") polls
 one specific pairing — Attal, Mélenchon, Philippe, Glucksmann and Retailleau
 each against the RN candidate (Bardella through early 2026, Le Pen from her
 2026-07-07 candidacy onward), plus a single early Ruffin–Le Pen poll and, from
