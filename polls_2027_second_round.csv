@@ -2,6 +2,7 @@ matchup,candidate_a,candidate_b,pollster,date,sample,pct_a,pct_b
 Attal_RE-LePen_RN,Attal_RE,LePen_RN,Elabe,26 - 28 août 2026,1503,43,57
 Attal_RE-LePen_RN,Attal_RE,LePen_RN,Ifop,24 - 25 août 2026,1598,46,54
 Attal_RE-LePen_RN,Attal_RE,LePen_RN,Harris,18 - 19 août 2026,1764,43,57
+Attal_RE-LePen_RN,Attal_RE,LePen_RN,Cluster17,22-24 juillet 2026,1506,44,56
 Attal_RE-LePen_RN,Attal_RE,LePen_RN,Elabe,9 - 10 juillet 2026,1503,46,54
 Attal_RE-LePen_RN,Attal_RE,LePen_RN,Ifop,7 - 8 juillet 2026,984,45,55
 Attal_RE-LePen_RN,Attal_RE,LePen_RN,Harris,7 - 8 juillet 2026,1592,45,55
@@ -11,11 +12,13 @@ Attal_RE-LePen_RN,Attal_RE,LePen_RN,Ifop,16 - 18 avril 2024,1093,47,53
 Attal_RE-LePen_RN,Attal_RE,LePen_RN,Ifop,31 janvier - 1er février 2024,1081,49,51
 Glucksmann_PP-LePen_RN,Glucksmann_PP,LePen_RN,Elabe,26 - 28 août 2026,1503,43,57
 Glucksmann_PP-LePen_RN,Glucksmann_PP,LePen_RN,Ifop,24 - 25 août 2026,1598,45,55
+Glucksmann_PP-LePen_RN,Glucksmann_PP,LePen_RN,Cluster17,22-24 juillet 2026,1506,44,56
 Glucksmann_PP-LePen_RN,Glucksmann_PP,LePen_RN,Elabe,9 - 10 juillet 2026,1503,41.5,58.5
 Hollande_PS-LePen_RN,Hollande_PS,LePen_RN,Ifop,24 - 25 août 2026,1598,46,54
 Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Elabe,26 - 28 août 2026,1503,30.5,69.5
 Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Ifop,24 - 25 août 2026,1598,33,67
 Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Harris,18 - 19 août 2026,1764,32,68
+Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Cluster17,22-24 juillet 2026,1506,39,61
 Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Elabe,9 - 10 juillet 2026,1503,32.5,67.5
 Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Ifop,7 - 8 juillet 2026,984,30,70
 Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Harris,7 - 8 juillet 2026,1592,33,67
@@ -25,6 +28,7 @@ Melenchon_LFI-LePen_RN,Melenchon_LFI,LePen_RN,Ifop,31 janvier - 1er février 202
 Philippe_HOR-LePen_RN,Philippe_HOR,LePen_RN,Elabe,26 - 28 août 2026,1503,47.5,52.5
 Philippe_HOR-LePen_RN,Philippe_HOR,LePen_RN,Ifop,24 - 25 août 2026,1598,48,52
 Philippe_HOR-LePen_RN,Philippe_HOR,LePen_RN,Harris,18 - 19 août 2026,1764,45,55
+Philippe_HOR-LePen_RN,Philippe_HOR,LePen_RN,Cluster17,22-24 juillet 2026,1506,48,52
 Philippe_HOR-LePen_RN,Philippe_HOR,LePen_RN,Elabe,9 - 10 juillet 2026,1503,48,52
 Philippe_HOR-LePen_RN,Philippe_HOR,LePen_RN,Ifop,7 - 8 juillet 2026,984,46,54
 Philippe_HOR-LePen_RN,Philippe_HOR,LePen_RN,Harris,7 - 8 juillet 2026,1592,49,51
@@ -35,6 +39,7 @@ Philippe_HOR-LePen_RN,Philippe_HOR,LePen_RN,Odoxa,23 - 24 avril 2025,1005,54,46
 Philippe_HOR-LePen_RN,Philippe_HOR,LePen_RN,Ifop,16 - 18 avril 2024,1090,49,51
 Philippe_HOR-LePen_RN,Philippe_HOR,LePen_RN,Ifop,31 janvier - 1er février 2024,1081,50,50
 Retailleau_LR-LePen_RN,Retailleau_LR,LePen_RN,Ifop,24 - 25 août 2026,1598,42,58
+Retailleau_LR-LePen_RN,Retailleau_LR,LePen_RN,Cluster17,22-24 juillet 2026,1506,43,57
 Retailleau_LR-LePen_RN,Retailleau_LR,LePen_RN,Elabe,9 - 10 juillet 2026,1503,44,56
 Attal_RE-Bardella_RN,Attal_RE,Bardella_RN,Harris,25 - 27 mai 2026,1744,43,57
 Attal_RE-Bardella_RN,Attal_RE,Bardella_RN,Odoxa,19 - 20 novembre 2025,1004,44,56
