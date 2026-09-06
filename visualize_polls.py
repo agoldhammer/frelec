@@ -73,12 +73,15 @@ def parse_french_date(text, year=POLL_YEAR):
     text = text.strip().lower().replace("–", "-").replace("—", "-")
     parts = [p.strip() for p in text.split("-")]
 
+    def to_day(tok):
+        return 1 if tok in ("1er", "1e") else int(tok)
+
     def one(part, default_month=None):
         tokens = part.split()
         if len(tokens) == 2:
-            return int(tokens[0]), FRENCH_MONTHS[tokens[1]]
+            return to_day(tokens[0]), FRENCH_MONTHS[tokens[1]]
         if len(tokens) == 1 and default_month is not None:
-            return int(tokens[0]), default_month
+            return to_day(tokens[0]), default_month
         raise ValueError(f"unparseable date fragment: {part!r}")
 
     end_day, end_month = one(parts[-1])

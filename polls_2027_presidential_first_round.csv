@@ -1,4 +1,16 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
+OpinionWay,2-3 septembre,1003,1,1,17,3,4,13,13,,,11,,35,3,,
+OpinionWay,2-3 septembre,1003,2,1,16,3,4,12,,20,,8,,33,3,,
+OpinionWay,2-3 septembre,1003,3,1,17,2,3,11,7,15,,7,,34,3,,
+Ipsos,31 août - 2 septembre,1500,1,0.5,15,2.5,3.5,11.5,7.5,14.5,,6,2,34,3,,
+Ipsos,31 août - 2 septembre,1500,2,0.5,15,2.5,4,12,,19,,7.5,2,34.5,3,,
+Ipsos,31 août - 2 septembre,1500,3,0.5,15,2.5,4,14,14,,,9.5,2.5,35,3,,
+Ipsos,31 août - 2 septembre,1500,4,1,16,3,5,4.5,8.5,16.5,,6,2,34.5,3,,Glucksmann_PP=4.5 (Faure (PS))
+Ipsos,31 août - 2 septembre,1500,5,1,16.5,3.5,5,4.5,,22.5,,7.5,2,34.5,3,,Glucksmann_PP=4.5 (Faure (PS))
+Ipsos,31 août - 2 septembre,1500,6,1,17,3.5,5.5,5.5,15.5,,,10,2.5,36,3.5,,Glucksmann_PP=5.5 (Faure (PS))
+Cluster17,31 août - 1er septembre,1711,1,1,18,2,2,11.5,,18,3.5,7.5,3,30,3.5,,
+Cluster17,31 août - 1er septembre,1711,2,1,18,2,2.5,11.5,13.5,,4,9,3,31.5,4,,
+Cluster17,31 août - 1er septembre,1711,3,1,17,2,,11,,17,3.5,6.5,2,29,3,8.0,Autre=8.0 (Ruffin (4); Lisnard (4))
 Elabe,26-28 août,1501,1,1.5,14,3,3.5,11.5,,17,2,6.5,3,34,4,,
 Elabe,26-28 août,1501,2,1.5,14,3,3,14,12,,2.5,9.5,2,34.5,4,,
 Elabe,26-28 août,1501,3,2,14,3.5,4,7.5,,19.5,,6,2.5,34,4,3,"Glucksmann_PP=7.5 (Hollande (PS)); Autre=3.0 (Lisnard)"

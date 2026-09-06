@@ -58,10 +58,10 @@ python3 parse_polls.py /tmp/frelec_raw.wiki polls_2027_second_round.csv --second
 
 ### `polls_2027_presidential_first_round.csv`
 
-First-round voting-intention polls, January–August 2026, scraped from the French
+First-round voting-intention polls, January–September 2026, scraped from the French
 Wikipedia article
 ["Liste de sondages sur l'élection présidentielle française de 2027"](https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027)
-(pulled 2026-09-01).
+(pulled 2026-09-06).
 
 Starting with the 7–8 July 2026 polls (Wikipedia's "Second semestre 2026"
 sub-table), the table switched the RN column from a hypothetical "candidate"
@@ -89,10 +89,9 @@ Lecornu, etc.). A share Wikipedia reports only as an upper bound (e.g. `<1`)
 is encoded as the midpoint of that bound (`0.5`), with the original reading
 kept in `notes`.
 
-Latest poll: Elabe (n=1501, 26–28 August) — RN (Le Pen) 34–35.5%, Mélenchon
-14–14.5%, Philippe 14.5–20.5%, Glucksmann 11.5–14%, Attal 6.5–12.5%,
-Retailleau 6–9.5% (the scenarios standing Hollande or Faure in for
-Glucksmann are left out of that range).
+Latest poll: OpinionWay (n=1003, 2–3 September) — RN (Le Pen) 33–35%,
+Mélenchon 16–17%, Philippe 15–20%, Glucksmann 11–13%, Attal 7–13%,
+Retailleau 7–11%.
 
 Caveat (per Wikipedia, citing Le Monde): polls taken a year-plus before a French
 presidential election have historically been poor predictors — in 2022 LFI
@@ -103,9 +102,9 @@ included in this CSV — ask if you want those pulled too.
 
 ### `polls_2027_second_round.csv`
 
-Second-round (runoff) hypothetical match-up polls, January 2024 – August 2026,
+Second-round (runoff) hypothetical match-up polls, January 2024 – September 2026,
 scraped from the same Wikipedia page's "Sondages concernant le second tour"
-section (pulled 2026-09-01). Each subsection there ("Hypothèse X – Y") polls
+section (pulled 2026-09-06). Each subsection there ("Hypothèse X – Y") polls
 one specific pairing — Attal, Mélenchon, Philippe, Glucksmann and Retailleau
 each against the RN candidate (Bardella through early 2026, Le Pen from her
 2026-07-07 candidacy onward), plus a single early Ruffin–Le Pen poll and, from
