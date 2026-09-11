@@ -21,8 +21,11 @@ META_HEADERS = {'Sondeur', 'Date', 'Echantillon'}
 # same series -- the CSV column and visualize_polls.py's SERIES both call it
 # RN -- so the named forms collapse onto it. The second-round tables
 # deliberately keep LePen_RN and Bardella_RN apart: there, which RN candidate
-# was polled is the whole point of the match-up.
-FIRST_ROUND_ALIASES = {'LePen_RN': 'RN', 'Bardella_RN': 'RN'}
+# was polled is the whole point of the match-up. 'Autres' folds onto 'Autre':
+# Wikipedia re-wrote the catch-all header from singular to plural sometime
+# after 2026-08-20 with no change of meaning, and it stays one series rather
+# than fragmenting into a second catch-all column.
+FIRST_ROUND_ALIASES = {'LePen_RN': 'RN', 'Bardella_RN': 'RN', 'Autres': 'Autre'}
 
 # The catch-all column. A note inside it names who the "other" candidate was;
 # a note inside a candidate's own column names a substitute for that
@@ -148,7 +151,8 @@ def header_key(cell):
     if m:
         key = slugify(m.group(1))
         return FIRST_ROUND_ALIASES.get(key, key)
-    return slugify(clean_text(strip_attrs(cell)))
+    key = slugify(clean_text(strip_attrs(cell)))
+    return FIRST_ROUND_ALIASES.get(key, key)
 
 def split_blocks(text):
     """Split a wikitable into its |- delimited row blocks, as lists of cell
