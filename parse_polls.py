@@ -97,8 +97,15 @@ def parse_value_cell(raw):
             else:
                 v_str, name = seg, ''
             v_str = v_str.strip().replace(',', '.').replace(' ', '')
-            if v_str:
-                total += float(v_str)
+            num_str = v_str
+            # Same upper-bound shape ("<1") the single-value path below
+            # handles can turn up on one side of an <hr> split too; convert
+            # it for the sum but keep the original reading in the label.
+            m = re.fullmatch(r'<(\d+(?:\.\d+)?)', v_str)
+            if m:
+                num_str = str(float(m.group(1)) / 2)
+            if num_str:
+                total += float(num_str)
             parts.append(f"{name} ({v_str})" if name else v_str)
         return str(total), '; '.join(p for p in parts if p), colspan
     note = None
