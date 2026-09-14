@@ -5,6 +5,12 @@ OpinionWay,9-10 septembre,1001,3,0.5,17,2,3,9,7,15,,7,2,34,2,2.5,Arthaud_LO=0.5 
 OpinionWay,8-9 septembre,1001,1,0.5,15,2,3,9,8,15,,8,2,34,4,,Arthaud_LO=0.5 (reported as <1)
 OpinionWay,8-9 septembre,1001,2,1,15,2,4,12,14,,,12,2,34,4,,
 OpinionWay,8-9 septembre,1001,3,1,15,1,3,10,,19,,10,3,34,4,,
+Ipsos,3-9 septembre,13060,1,0.5,15.5,2.5,4,11.5,6,14,,7,2,33,4,,
+Ipsos,3-9 septembre,13060,2,0.5,15.5,2.5,4,12.5,,17.5,,8,2,33.5,4,,
+Ipsos,3-9 septembre,13060,3,0.5,15.5,2.5,4.5,13.5,13,,,10,2,34,4.5,,
+Ipsos,3-9 septembre,13060,4,0.5,16.5,3,5,4.5,7.5,16,,7,2,34,4,,Glucksmann_PP=4.5 (Faure (PS))
+Ipsos,3-9 septembre,13060,5,0.5,16.5,3.5,5.5,5,,21,,7.5,2,34.5,4,,Glucksmann_PP=5.0 (Faure (PS))
+Ipsos,3-9 septembre,13060,6,0.5,17,3.5,5.5,5.5,15.5,,,10.5,2.5,35,4.5,,Glucksmann_PP=5.5 (Faure (PS))
 OpinionWay,2-3 septembre,1003,1,1,17,3,4,13,13,,,11,,35,3,,
 OpinionWay,2-3 septembre,1003,2,1,16,3,4,12,,20,,8,,33,3,,
 OpinionWay,2-3 septembre,1003,3,1,17,2,3,11,7,15,,7,,34,3,,
