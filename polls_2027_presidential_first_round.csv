@@ -2,6 +2,11 @@ pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,
 OpinionWay,9-10 septembre,1001,1,1,16,3,3,7,8,16,,7,2,32,2,3.0,Glucksmann_PP=7.0 (Hollande (PS)); Autre=3.0 (Bouamrane (1); Lisnard (2))
 OpinionWay,9-10 septembre,1001,2,1,17,4,3,3,8,16,,7,3,33,2,3.0,Glucksmann_PP=3.0 (Royal (PS)); Autre=3.0 (Bouamrane (1); Lisnard (2))
 OpinionWay,9-10 septembre,1001,3,0.5,17,2,3,9,7,15,,7,2,34,2,2.5,Arthaud_LO=0.5 (reported as <1); Autre=2.5 (Bouamrane (<1); Lisnard (2))
+Harris,8-10 septembre,2052,1,1,17,3,4,7,15,,,10,2,36,5,,Glucksmann_PP=7.0 (Hollande (PS))
+Harris,8-10 septembre,2052,2,1,17,3,4,7,,19,,9,2,33,5,,Glucksmann_PP=7.0 (Hollande (PS))
+Harris,8-10 septembre,2052,3,1,17,2,3,12,14,,,9,2,35,5,,
+Harris,8-10 septembre,2052,4,1,17,3,3,10,,17,,7,3,34,5,,
+Harris,8-10 septembre,2052,5,1,16,2,3,9,8,14,,7,2,33,5,,
 OpinionWay,8-9 septembre,1001,1,0.5,15,2,3,9,8,15,,8,2,34,4,,Arthaud_LO=0.5 (reported as <1)
 OpinionWay,8-9 septembre,1001,2,1,15,2,4,12,14,,,12,2,34,4,,
 OpinionWay,8-9 septembre,1001,3,1,15,1,3,10,,19,,10,3,34,4,,
