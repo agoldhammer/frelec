@@ -65,6 +65,7 @@ def strip_refs(s):
     return s
 
 def clean_text(s):
+    s = strip_refs(s)
     s = re.sub(r'\{\{blanc\|([^}]*)\}\}', r'\1', s)
     s = re.sub(r"'''(.*?)'''", r'\1', s)
     s = re.sub(r'\{\{formatnum[:|]([^}]*)\}\}', r'\1', s, flags=re.IGNORECASE)
