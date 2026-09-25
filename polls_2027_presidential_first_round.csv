@@ -1,4 +1,7 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
+Cluster17,15-16 septembre,1943,1,0.5,19,2,2.5,12,,19,,7.5,3,31,3.5,,
+Cluster17,15-16 septembre,1943,2,0.5,20,2.5,2.5,14,13.5,,,9.5,3,31,3.5,,
+Cluster17,15-16 septembre,1943,3,1,19.5,3,3,7.5,,19.5,,7.5,4,30,,5,Glucksmann_PP=7.5 (Hollande (PS)); Autre=5.0 (Lisnard)
 OpinionWay,9-10 septembre,1001,1,1,16,3,3,7,8,16,,7,2,32,2,3.0,Glucksmann_PP=7.0 (Hollande (PS)); Autre=3.0 (Bouamrane (1); Lisnard (2))
 OpinionWay,9-10 septembre,1001,2,1,17,4,3,3,8,16,,7,3,33,2,3.0,Glucksmann_PP=3.0 (Royal (PS)); Autre=3.0 (Bouamrane (1); Lisnard (2))
 OpinionWay,9-10 septembre,1001,3,0.5,17,2,3,9,7,15,,7,2,34,2,2.5,Arthaud_LO=0.5 (reported as <1); Autre=2.5 (Bouamrane (<1); Lisnard (2))
