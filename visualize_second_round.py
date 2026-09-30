@@ -128,6 +128,8 @@ def style_axes(ax, theme):
 def plot_runoff_trend(rows, theme, dark, out_path):
     by_challenger = defaultdict(list)
     for r in rows:
+        if r["candidate_b"] not in RN_CANDIDATES:
+            continue
         by_challenger[r["candidate_a"]].append((r["date"], r["pct_a"]))
 
     fig, ax = plt.subplots(figsize=(10.5, 6.3), dpi=160)

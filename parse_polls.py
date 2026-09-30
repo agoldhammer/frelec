@@ -113,7 +113,11 @@ def parse_value_cell(raw):
     if '<br' in content:
         parts = re.split(r'<br\s*/?>', content, maxsplit=1)
         main = parts[0].strip()
-        note = re.sub(r'</?small>', '', parts[1]).strip() if len(parts) > 1 else None
+        if len(parts) > 1:
+            note = re.sub(r'</?small>', '', parts[1])
+            note = re.sub(r'<br\s*/?>', ' ', note).strip()
+        else:
+            note = None
     else:
         main = re.sub(r'</?small>', '', content).strip()
     main = main.strip()

@@ -4,6 +4,12 @@ Harris,22-24 septembre,1974,2,1,18,3,4,7,,16,,9,2,35,5,,Glucksmann_PP=7.0 (Holla
 Harris,22-24 septembre,1974,3,1,17,2,3,11,12,,,10,2,36,6,,
 Harris,22-24 septembre,1974,4,1,18,2,3,10,,16,,8,2,35,5,,
 Harris,22-24 septembre,1974,5,1,17,2,3,10,5,13,,7,2,35,5,,
+YouGov,17-21 septembre,1103,1,1,17,2,3,8,9,12,,8,2,34,6,,
+YouGov,17-21 septembre,1103,2,1,17,2,3,9,3,13,,8,2,35,6,,Attal_RE=3.0 (Le Maire)
+YouGov,17-21 septembre,1103,3,1,17,3,3,9,14,,,10,2,35,5,,
+YouGov,17-21 septembre,1103,4,1,18,3,7,,,17,,8,2,37,5,,
+YouGov,17-21 septembre,1103,5,1,16,2,4,5,9,12,,8,2,35,6,,Glucksmann_PP=5.0 (Faure (PS))
+YouGov,17-21 septembre,1103,6,1,15,1,2,5,8,10,2,7,2,33,5,9.0,Autre=9.0 (Hollande (4); Lisnard (2); Ruffin (2); Bertrand (1))
 Cluster17,15-16 septembre,1943,1,0.5,19,2,2.5,12,,19,,7.5,3,31,3.5,,
 Cluster17,15-16 septembre,1943,2,0.5,20,2.5,2.5,14,13.5,,,9.5,3,31,3.5,,
 Cluster17,15-16 septembre,1943,3,1,19.5,3,3,7.5,,19.5,,7.5,4,30,,5,Glucksmann_PP=7.5 (Hollande (PS)); Autre=5.0 (Lisnard)
@@ -49,7 +55,7 @@ Ifop,24-25 août,1598,3,0.5,17,3,3,15,14,,,9,1.5,34,3,,
 Ifop,24-25 août,1598,4,1,18,,,15,,19,,8,2.5,33,3.5,,
 Ifop,24-25 août,1598,5,1.5,18.5,,,17,15,,,9,2,34,3,,
 Ifop,24-25 août,1598,6,1.5,19,,,12,,21,,8,2,34,2.5,,Glucksmann_PP=12.0 (Hollande (PS))
-Ifop,24-25 août,1598,7,1,17,3,3,18,,,,12,2,35,3,6,Autre=6.0 (Le Maire)
+Ifop,24-25 août,1598,7,1,17,3,3,18,6,,,12,2,35,3,,Attal_RE=6.0 (Le Maire)
 Harris,18-19 août,1764,1,1,17,3,4,8,14,,,9,2,38,4,,Glucksmann_PP=8.0 (Hollande (PS))
 Harris,18-19 août,1764,2,1,17,3,4,8,,19,,7,2,35,4,,Glucksmann_PP=8.0 (Hollande (PS))
 Harris,18-19 août,1764,3,1,17,2,3,11,15,,,9,2,37,3,,

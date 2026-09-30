@@ -61,7 +61,7 @@ python3 parse_polls.py /tmp/frelec_raw.wiki polls_2027_second_round.csv --second
 First-round voting-intention polls, January–September 2026, scraped from the French
 Wikipedia article
 ["Liste de sondages sur l'élection présidentielle française de 2027"](https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027)
-(pulled 2026-09-29).
+(pulled 2026-09-30).
 
 Starting with the 7–8 July 2026 polls (Wikipedia's "Second semestre 2026"
 sub-table), the table switched the RN column from a hypothetical "candidate"
@@ -104,11 +104,16 @@ included in this CSV — ask if you want those pulled too.
 
 Second-round (runoff) hypothetical match-up polls, January 2024 – September 2026,
 scraped from the same Wikipedia page's "Sondages concernant le second tour"
-section (pulled 2026-09-29). Each subsection there ("Hypothèse X – Y") polls
+section (pulled 2026-09-30). Each subsection there ("Hypothèse X – Y") polls
 one specific pairing — Attal, Mélenchon, Philippe, Glucksmann and Retailleau
 each against the RN candidate (Bardella through early 2026, Le Pen from her
 2026-07-07 candidacy onward), plus a single early Ruffin–Le Pen poll and, from
-Ifop's 24–25 August 2026 poll, a first Hollande–Le Pen match-up.
+Ifop's 24–25 August 2026 poll, a first Hollande–Le Pen match-up. YouGov's
+17–21 September 2026 poll adds the dataset's first non-RN pairing,
+Philippe–Mélenchon; the trend chart (`visualize_second_round.py`), which
+plots each challenger's share specifically against the RN candidate, filters
+that match-up out rather than folding it into either candidate's RN trend
+line, though the row itself stays in the CSV.
 
 One CSV row per poll: `matchup` (`candidate_a-candidate_b`, e.g.
 `Attal_RE-Bardella_RN`), `candidate_a`/`candidate_b` (the two contenders,
