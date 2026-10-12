@@ -86,9 +86,8 @@ def parse_value_cell(raw):
         # substitutes for the same slot, each polled separately -- divided by
         # <hr>, rather than one value plus a note naming a single substitute.
         # Sum the values into the column's main figure, and record each
-        # substitute as "Name (value)" so the combined note still reads like
-        # the single-substitute case route_other expects (it strips a
-        # trailing "(...)" before comparing a note segment to a known name).
+        # substitute as "Name (value)", semicolon-separated. route_other
+        # leaves such a combined note where it is rather than re-routing it.
         total, parts = 0.0, []
         for seg in re.split(r'<hr\s*/?>', content):
             seg = seg.strip()
@@ -247,8 +246,16 @@ def route_other(note, columns, known):
     column was dropped. Returns (target_column, remaining_note), and leaves
     the value in "Autre" when the note names somebody with no column of their
     own (Ruffin, Hollande) or is not a name at all ("reported as <1").
+
+    A stacked cell (several "Name (value)" segments, see parse_value_cell)
+    is never re-routed: its value is the sum over every name in it, so
+    moving it would carry the others' shares into one candidate's column.
+    Villepin stays in "Autre" there alongside Ruffin, Lisnard and the rest
+    (owner's decision, 2026-10-12).
     """
     segments = [s.strip() for s in note.split(';') if s.strip()]
+    if len(segments) > 1:
+        return OTHER_COLUMN, note
     for i, segment in enumerate(segments):
         # "Hollande (PS)" -> "Hollande"
         surname = slugify(re.sub(r'\(.*?\)', '', segment))

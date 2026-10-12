@@ -78,6 +78,9 @@ routes those values back into `Villepin_LFH` rather than leaving them in
 `Autre`, so his series doesn't break in two on 7 July. An "Autre" value whose
 note names somebody who never had a column of their own — Ruffin, in the
 9–10 July Elabe scenarios — stays in `Autre`, with the name kept in `notes`.
+When one "Autre" cell stacks several names with a share each (Villepin
+alongside Ruffin, Lisnard, Bertrand…), the whole cell stays in `Autre`,
+Villepin included, with every name and share listed in `notes`.
 
 Each poll is published with several "scenarios" (different hypothetical candidate
 line-ups, e.g. Attal vs. Philippe running, or Le Pen vs. Bardella as the RN

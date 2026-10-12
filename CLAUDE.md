@@ -84,7 +84,9 @@ and output rows:
   column was dropped. Only `Autre` is re-routed — a note inside a candidate's
   *own* column names a substitute for them (`Glucksmann_PP=9.0 (Hollande
   (PS))`) and stays put. A note naming somebody with no column at all
-  (Ruffin) also stays put.
+  (Ruffin) also stays put, and so does a stacked multi-name cell
+  (`<hr>`-separated, note `Name (x); Name (y)`), even when one of the names
+  is Villepin — its value is the sum over all of them.
 - A column set that differs from `CANDIDATES` is reported on stderr
   (`report_column_changes`). The parse handles it, but a candidate entering or
   leaving the race should still be audible.
