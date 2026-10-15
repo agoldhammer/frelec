@@ -402,7 +402,10 @@ EXCLUDED_SECOND_ROUND_ROWS = {
     # test of its own candidate. Dropped at the owner's request 2026-08-31.
     # This keys on the one row, not on the match-up, so a later genuine
     # Ruffin - Le Pen poll would still flow in and get its palette slot.
-    ("Ruffin_D-LePen_RN", "Cluster 17", "2 - 5 avril 2024"),
+    # Wikitext date spacing changed from "2 - 5 avril 2024" to "2-5 avril 2024"
+    # between 2026-10-05 and 2026-10-15 (part of a wider hyphen-spacing cleanup
+    # across the second-round tables); key updated 2026-10-15 to match.
+    ("Ruffin_D-LePen_RN", "Cluster 17", "2-5 avril 2024"),
 }
 
 def is_second_round_event_row(lines):
