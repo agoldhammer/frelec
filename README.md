@@ -61,7 +61,7 @@ python3 parse_polls.py /tmp/frelec_raw.wiki polls_2027_second_round.csv --second
 First-round voting-intention polls, January–October 2026, scraped from the French
 Wikipedia article
 ["Liste de sondages sur l'élection présidentielle française de 2027"](https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027)
-(pulled 2026-10-15).
+(pulled 2026-10-16).
 
 Starting with the 7–8 July 2026 polls (Wikipedia's "Second semestre 2026"
 sub-table), the table switched the RN column from a hypothetical "candidate"
@@ -92,9 +92,9 @@ Lecornu, etc.). A share Wikipedia reports only as an upper bound (e.g. `<1`)
 is encoded as the midpoint of that bound (`0.5`), with the original reading
 kept in `notes`.
 
-Latest poll: Ifop (n=1390, 12–14 October) — RN (Le Pen) 32–36%,
-Mélenchon 16–17%, Philippe 13–18%, Attal 5–13%, Glucksmann 11.5–16%,
-Retailleau 5–8%.
+Latest poll: OpinionWay (n=1043, 13–14 October) — RN (Le Pen) 35–37%,
+Mélenchon 14–15%, Philippe 12–15%, Attal 7–11%, Glucksmann 13–16%,
+Retailleau 7–9%.
 
 Caveat (per Wikipedia, citing Le Monde): polls taken a year-plus before a French
 presidential election have historically been poor predictors — in 2022 LFI
@@ -107,7 +107,7 @@ included in this CSV — ask if you want those pulled too.
 
 Second-round (runoff) hypothetical match-up polls, January 2024 – October 2026,
 scraped from the same Wikipedia page's "Sondages concernant le second tour"
-section (pulled 2026-10-15). Each subsection there ("Hypothèse X – Y") polls
+section (pulled 2026-10-16). Each subsection there ("Hypothèse X – Y") polls
 one specific pairing — Attal, Mélenchon, Philippe, Glucksmann and Retailleau
 each against the RN candidate (Bardella through early 2026, Le Pen from her
 2026-07-07 candidacy onward), and, from Ifop's 24–25 August 2026 poll, a first
