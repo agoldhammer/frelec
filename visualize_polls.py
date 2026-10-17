@@ -13,6 +13,7 @@ Usage:
 import argparse
 import csv
 import math
+import re
 import sys
 from collections import defaultdict
 from datetime import date, timedelta
@@ -258,10 +259,21 @@ def dodge(values, gap=1.2, step=0.16):
 
 
 def plot_pollsters(records, theme, dark, sigma, out):
-    """One row per pollster (their latest poll), plus a smoothed-average row."""
-    latest = {}
-    for rec in records:
-        latest[rec["pollster"]] = rec  # records sorted ascending by date
+    """One row per pollster (their latest poll), plus a smoothed-average row.
+
+    Two distinct polls an institute fielded on the same days are tagged
+    `OpinionWay-1` / `OpinionWay-2` by the parser; they are grouped under the
+    bare institute name here, and both get a row when they are its latest.
+    """
+    by_institute = defaultdict(list)
+    for rec in records:  # sorted ascending by date
+        institute = re.sub(r"-\d+$", "", rec["pollster"])
+        polls = by_institute[institute]
+        if polls and polls[-1]["date"] != rec["date"]:
+            polls.clear()
+        polls.append(rec)
+    latest = {rec["pollster"]: rec
+              for polls in by_institute.values() for rec in polls}
 
     end_date = max(rec["date"] for rec in records)
     poll_means = defaultdict(list)

@@ -61,7 +61,7 @@ python3 parse_polls.py /tmp/frelec_raw.wiki polls_2027_second_round.csv --second
 First-round voting-intention polls, January–October 2026, scraped from the French
 Wikipedia article
 ["Liste de sondages sur l'élection présidentielle française de 2027"](https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027)
-(pulled 2026-10-16).
+(pulled 2026-10-17).
 
 Starting with the 7–8 July 2026 polls (Wikipedia's "Second semestre 2026"
 sub-table), the table switched the RN column from a hypothetical "candidate"
@@ -84,7 +84,12 @@ Villepin included, with every name and share listed in `notes`.
 
 Each poll is published with several "scenarios" (different hypothetical candidate
 line-ups, e.g. Attal vs. Philippe running, or Le Pen vs. Bardella as the RN
-candidate) — one CSV row per scenario, grouped by `pollster`/`date`/`sample`.
+candidate) — one CSV row per scenario, grouped by `pollster`/`date`/`sample`. When one
+institute publishes two distinct polls with the same fieldwork dates and
+sample size (OpinionWay's Présitrack for Les Echos and its CNews poll, both
+13–14 October, n=1043), the parser tags them `OpinionWay-1`, `OpinionWay-2`,
+… numbered oldest-listed first, so they stay two polls instead of being
+averaged into one.
 Values are vote-share percentages; blank means that candidate wasn't tested in
 that scenario. The `notes` column records scenario-specific substitutions
 (e.g. Hollande or Faure standing in for the PS line, Ruffin, Knafo, Darmanin,
@@ -92,9 +97,11 @@ Lecornu, etc.). A share Wikipedia reports only as an upper bound (e.g. `<1`)
 is encoded as the midpoint of that bound (`0.5`), with the original reading
 kept in `notes`.
 
-Latest poll: OpinionWay (n=1043, 13–14 October) — RN (Le Pen) 35–37%,
-Mélenchon 14–15%, Philippe 12–15%, Attal 7–11%, Glucksmann 13–16%,
-Retailleau 7–9%.
+Latest polls: OpinionWay-1 (Présitrack for Les Echos/Radio Classique, n=1043,
+13–14 October) — RN (Le Pen) 35–37%, Mélenchon 14–15%, Philippe 12–15%,
+Attal 7–11%, Glucksmann 13–16%, Retailleau 7–9%; and OpinionWay-2 (CNews,
+same dates and sample, one scenario) — RN (Le Pen) 35%, Mélenchon 15%,
+Glucksmann 13%, Philippe 12%, Retailleau 6%, Attal 5%.
 
 Caveat (per Wikipedia, citing Le Monde): polls taken a year-plus before a French
 presidential election have historically been poor predictors — in 2022 LFI

@@ -1,7 +1,8 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
-OpinionWay,13-14 octobre,1043,1,0.5,14,3,3,13,7,12,,7,2,35,4,,Arthaud_LO=0.5 (reported as <1)
-OpinionWay,13-14 octobre,1043,2,1,15,2,3,16,11,,,9,2,37,4,,
-OpinionWay,13-14 octobre,1043,3,1,15,2,3,15,,15,,8,2,35,4,,
+OpinionWay-2,13-14 octobre,1043,1,1,15,1,2,13,5,12,,6,1,35,5,4.5,Autre=4.5 (Lisnard (4); Bouamrane (<1))
+OpinionWay-1,13-14 octobre,1043,1,0.5,14,3,3,13,7,12,,7,2,35,4,,Arthaud_LO=0.5 (reported as <1)
+OpinionWay-1,13-14 octobre,1043,2,1,15,2,3,16,11,,,9,2,37,4,,
+OpinionWay-1,13-14 octobre,1043,3,1,15,2,3,15,,15,,8,2,35,4,,
 Ifop,12-14 octobre,1390,1,0,16,2,2,11.5,5,13,,5,1,32,3,9.5,Autre=9.5 (Lisnard (6); Ruffin (2); Villepin (1.5))
 Ifop,12-14 octobre,1390,2,0.5,17,2.5,2,16,13,,,8,2,36,3,,
 Ifop,12-14 octobre,1390,3,0.5,16,3,2.5,13.5,,18,,6.5,2,35,3,,

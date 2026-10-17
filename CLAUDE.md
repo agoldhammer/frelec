@@ -87,6 +87,13 @@ and output rows:
   (Ruffin) also stays put, and so does a stacked multi-name cell
   (`<hr>`-separated, note `Name (x); Name (y)`), even when one of the names
   is Villepin — its value is the sum over all of them.
+- `tag_colliding_polls` handles two distinct polls by one institute that
+  share `pollster`/`date`/`sample` (OpinionWay's Présitrack and CNews polls,
+  both 13–14 October 2026, n=1043). That triple is the poll key downstream —
+  `visualize_polls.py` averages every row carrying it — so the parser renames
+  them `OpinionWay-1`, `OpinionWay-2`, numbered from the bottom of the table
+  up (oldest listed first), per table. The pollster chart strips the tag to
+  group by institute and shows every poll on the institute's latest date.
 - A column set that differs from `CANDIDATES` is reported on stderr
   (`report_column_changes`). The parse handles it, but a candidate entering or
   leaving the race should still be audible.

@@ -1,4 +1,5 @@
 import re, csv, sys, unicodedata
+from collections import defaultdict
 
 # Canonical CSV column order, and the registry of candidates we already know
 # about. This is NOT a positional map onto any one wikitable: each sub-table's
@@ -296,8 +297,30 @@ def parse_rows(text):
             # which is what the parser did for every table before it learned
             # to read headers.
             columns, n_meta = CANDIDATES, 3
-        polls.extend(parse_table(blocks, columns, n_meta, known))
+        polls.extend(tag_colliding_polls(parse_table(blocks, columns, n_meta, known)))
     return polls, out_columns
+
+def tag_colliding_polls(polls):
+    """Give two distinct polls that share pollster, date and sample their own
+    pollster names, `OpinionWay-1` and `OpinionWay-2`, numbered from the
+    bottom of the table up (oldest listed first, since tables run newest at
+    the top). `(pollster, date, sample)` is what identifies one poll
+    downstream -- the visualizer averages every row sharing it -- so without a
+    tag two unrelated polls fielded on the same days would be averaged into
+    one. Works per table: the dates carry no year, and a sub-table is one
+    period. Rows of a poll with no twin keep the bare pollster name."""
+    groups = defaultdict(list)
+    for row in polls:
+        key = (row['pollster'], row['date'], row['sample'])
+        if row['_poll'] not in groups[key]:
+            groups[key].append(row['_poll'])
+    for row in polls:
+        ids = groups[(row['pollster'], row['date'], row['sample'])]
+        if len(ids) > 1:
+            row['pollster'] = f"{row['pollster']}-{len(ids) - ids.index(row['_poll'])}"
+    for row in polls:
+        del row['_poll']
+    return polls
 
 def report_column_changes(parsed, seen):
     """Say on stderr when a table's column set is not the canonical one. A
@@ -323,6 +346,7 @@ def parse_table(blocks, columns, n_meta, known):
     pollster = date = sample = None
     remaining = 0
     scenario_idx = 0
+    poll_idx = 0
 
     for lines in blocks:
         if any(l.lstrip().startswith('!') for l in lines):
@@ -342,6 +366,7 @@ def parse_table(blocks, columns, n_meta, known):
             r = get_attr_int(cells[0], 'rowspan') or 1
             remaining = r
             scenario_idx = 0
+            poll_idx += 1
             value_cells = cells[n_meta:]
         else:
             value_cells = cells
@@ -349,7 +374,8 @@ def parse_table(blocks, columns, n_meta, known):
         scenario_idx += 1
         remaining -= 1
 
-        row = {'pollster': pollster, 'date': date, 'sample': sample, 'scenario': scenario_idx}
+        row = {'pollster': pollster, 'date': date, 'sample': sample, 'scenario': scenario_idx,
+               '_poll': poll_idx}
         notes = []
         ci = 0
         for raw_cell in value_cells:
