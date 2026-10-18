@@ -1,4 +1,10 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
+Elabe,14-16 octobre,1701,1,1,15,1.5,3,15.5,,16.5,2,7,2.5,32.5,3.5,,
+Elabe,14-16 octobre,1701,2,1,16,2,2.5,16.5,10.5,,3,9.5,2,33.5,3.5,,
+Elabe,14-16 octobre,1701,3,0.5,15.5,1.5,2.5,15,,15.5,,6.5,3,31.5,3,5.5,Autre=5.5 (Lisnard)
+Elabe,14-16 octobre,1701,4,0.5,16,1.5,,16.5,9.5,,,9,2.5,31,3.5,9.5,Autre=9.5 (Ruffin (3); Lisnard (6.5))
+Elabe,14-16 octobre,1701,5,0.5,15.5,1.5,2.5,15.5,4.5,13.5,,7.5,3,32.5,3.5,,
+Elabe,14-16 octobre,1701,6,1,15,1,2.5,16,,16.5,,7.5,2.5,33.5,3,1.5,Autre=1.5 (Polony)
 OpinionWay-2,13-14 octobre,1043,1,1,15,1,2,13,5,12,,6,1,35,5,4.5,Autre=4.5 (Lisnard (4); Bouamrane (<1))
 OpinionWay-1,13-14 octobre,1043,1,0.5,14,3,3,13,7,12,,7,2,35,4,,Arthaud_LO=0.5 (reported as <1)
 OpinionWay-1,13-14 octobre,1043,2,1,15,2,3,16,11,,,9,2,37,4,,
