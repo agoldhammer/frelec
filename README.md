@@ -61,7 +61,14 @@ python3 parse_polls.py /tmp/frelec_raw.wiki polls_2027_second_round.csv --second
 First-round voting-intention polls, January–October 2026, scraped from the French
 Wikipedia article
 ["Liste de sondages sur l'élection présidentielle française de 2027"](https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027)
-(pulled 2026-10-19).
+(pulled 2026-10-21).
+
+David Lisnard (Nouvelle Énergie) gained their own column starting with the
+17–19 October 2026 Ifop poll's sub-table ("Octobre-décembre 2026"). Earlier
+mentions of Lisnard inside "Autre" notes are routed into `Lisnard_NE` the
+same way Villepin's are (see below), so their series is continuous back to
+their first poll appearance rather than starting only once they had a column
+of their own.
 
 Starting with the 7–8 July 2026 polls (Wikipedia's "Second semestre 2026"
 sub-table), the table switched the RN column from a hypothetical "candidate"
@@ -97,8 +104,10 @@ Lecornu, etc.). A share Wikipedia reports only as an upper bound (e.g. `<1`)
 is encoded as the midpoint of that bound (`0.5`), with the original reading
 kept in `notes`.
 
-Latest polls: Elabe (n=1701, 14–16 October) — RN (Le Pen) 31–33.5%,
-Mélenchon 15–16%, Glucksmann 15–16.5%, Philippe 13.5–16.5%, Attal 4.5–10.5%,
+Latest polls: Ifop (n=1928, 17–19 October) — RN (Le Pen) 34–38%, Mélenchon
+15–20%, Glucksmann 10–16%, Philippe 12–16%, Attal 4–13%, Retailleau 5–7.5%,
+Lisnard 5.5–7% (two scenarios); Elabe (n=1701, 14–16 October) — RN (Le Pen)
+31–33.5%, Mélenchon 15–16%, Glucksmann 15–16.5%, Philippe 13.5–16.5%, Attal 4.5–10.5%,
 Retailleau 6.5–9.5%; Cluster17 (n=1263, 14–15 October) — RN (Le Pen) 31–35.5%,
 Mélenchon 18–20.5%, Glucksmann 11–16%, Philippe 17–20%, Attal 17% (one
 scenario), Retailleau 7–17.5%; YouGov (n=1094, 12–15 October) — RN (Le Pen)
@@ -120,7 +129,7 @@ included in this CSV — ask if you want those pulled too.
 
 Second-round (runoff) hypothetical match-up polls, January 2024 – October 2026,
 scraped from the same Wikipedia page's "Sondages concernant le second tour"
-section (pulled 2026-10-19). Each subsection there ("Hypothèse X – Y") polls
+section (pulled 2026-10-21). Each subsection there ("Hypothèse X – Y") polls
 one specific pairing — Attal, Mélenchon, Philippe, Glucksmann and Retailleau
 each against the RN candidate (Bardella through early 2026, Le Pen from her
 2026-07-07 candidacy onward), and, from Ifop's 24–25 August 2026 poll, a first

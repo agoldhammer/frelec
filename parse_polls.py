@@ -9,8 +9,8 @@ from collections import defaultdict
 # order the columns come out in, and lets an "Autre" cell that names a dropped
 # candidate find the column that candidate used to have.
 CANDIDATES = ['Arthaud_LO','Melenchon_LFI','Roussel_PCF','Tondelier_LE','Glucksmann_PP',
-              'Attal_RE','Philippe_HOR','Villepin_LFH','Retailleau_LR','DupontAignan_DLF',
-              'RN','Zemmour_REC','Autre']
+              'Attal_RE','Philippe_HOR','Lisnard_NE','Villepin_LFH','Retailleau_LR',
+              'DupontAignan_DLF','RN','Zemmour_REC','Autre']
 
 # Leading columns of a first-round table that describe the poll, not a
 # candidate. Compared slugified, so accents and markup don't matter.

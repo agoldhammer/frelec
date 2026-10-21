@@ -1,184 +1,191 @@
-pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
-Elabe,14-16 octobre,1701,1,1,15,1.5,3,15.5,,16.5,2,7,2.5,32.5,3.5,,
-Elabe,14-16 octobre,1701,2,1,16,2,2.5,16.5,10.5,,3,9.5,2,33.5,3.5,,
-Elabe,14-16 octobre,1701,3,0.5,15.5,1.5,2.5,15,,15.5,,6.5,3,31.5,3,5.5,Autre=5.5 (Lisnard)
-Elabe,14-16 octobre,1701,4,0.5,16,1.5,,16.5,9.5,,,9,2.5,31,3.5,9.5,Autre=9.5 (Ruffin (3); Lisnard (6.5))
-Elabe,14-16 octobre,1701,5,0.5,15.5,1.5,2.5,15.5,4.5,13.5,,7.5,3,32.5,3.5,,
-Elabe,14-16 octobre,1701,6,1,15,1,2.5,16,,16.5,,7.5,2.5,33.5,3,1.5,Autre=1.5 (Polony)
-Cluster17,14-15 octobre,1263,1,0.5,18,1.5,2,11,,17,,7,2,31,3,7,Autre=7.0 (Lisnard)
-Cluster17,14-15 octobre,1263,2,0.5,20,2,2,12,,20,,,3,35.5,5,,
-Cluster17,14-15 octobre,1263,3,1,20,2,2,16,,,,17.5,3,34.5,4,,
-Cluster17,14-15 octobre,1263,4,1,20.5,2,2,16,,,,,2,35.5,4,17,Autre=17.0 (Lisnard)
-Cluster17,14-15 octobre,1263,5,1,20,2,2,13.5,17,,,,3.5,35.5,5.5,,
-YouGov,12-15 octobre,1094,1,0,15,3,6,12,6,10,,6,3,36,3,,
-YouGov,12-15 octobre,1094,2,0,15,3,6,14,10,,,9,3,37,4,,
-YouGov,12-15 octobre,1094,3,0,15,3,6,13,,13,,7,3,36,3,,
-YouGov,12-15 octobre,1094,4,1,16,3,6,9,,15,,7,3,37,4,,Glucksmann_PP=9.0 (Hollande (PS))
-YouGov,12-15 octobre,1094,5,0,13,2,5,12,6,8,,5,2,35,4,7.0,Autre=7.0 (Lisnard (4); Ruffin (2); Villepin (1))
-OpinionWay-2,13-14 octobre,1043,1,1,15,1,2,13,5,12,,6,1,35,5,4.5,Autre=4.5 (Lisnard (4); Bouamrane (<1))
-OpinionWay-1,13-14 octobre,1043,1,0.5,14,3,3,13,7,12,,7,2,35,4,,Arthaud_LO=0.5 (reported as <1)
-OpinionWay-1,13-14 octobre,1043,2,1,15,2,3,16,11,,,9,2,37,4,,
-OpinionWay-1,13-14 octobre,1043,3,1,15,2,3,15,,15,,8,2,35,4,,
-Ifop,12-14 octobre,1390,1,0,16,2,2,11.5,5,13,,5,1,32,3,9.5,Autre=9.5 (Lisnard (6); Ruffin (2); Villepin (1.5))
-Ifop,12-14 octobre,1390,2,0.5,17,2.5,2,16,13,,,8,2,36,3,,
-Ifop,12-14 octobre,1390,3,0.5,16,3,2.5,13.5,,18,,6.5,2,35,3,,
-Ifop,12-14 octobre,1390,4,0,16,2.5,2,14,6,14,,6.5,2,34,3,,
-Harris,5-8 octobre,2004,1,1,19,2,5,7,12,,,10,2,37,5,,Glucksmann_PP=7.0 (Hollande (PS))
-Harris,5-8 octobre,2004,2,1,18,3,4,7,,17,,8,2,36,4,,Glucksmann_PP=7.0 (Hollande (PS))
-Harris,5-8 octobre,2004,3,1,18,2,3,11,12,,,10,2,36,5,,
-Harris,5-8 octobre,2004,4,1,18,2,3,10,,17,,7,2,36,4,,
-Harris,5-8 octobre,2004,5,1,18,2,2,10,5,13,,7,2,35,5,,
-Odoxa,24 septembre - 7 octobre,12005,1,0.5,18,2,3,9.5,,17,,6.5,2,37,4.5,,
-Odoxa,24 septembre - 7 octobre,12005,2,1,18.5,2,3.5,10.5,11,,,9,2,38,4.5,,
-Ifop,25-29 septembre,1527,1,0.5,15,2.5,3,11,8,16,,7,1,32,4,,
-Ifop,25-29 septembre,1527,2,0.5,16,2.5,3,11,,21,,8,1.5,33,3.5,,
-Ifop,25-29 septembre,1527,3,1,15,2.5,4,13,15,,,10,2,34,3.5,,
-Ifop,25-29 septembre,1527,4,1,17,3,5.5,4,17,,,11,1,36,4.5,,Glucksmann_PP=4.0 (Faure (PS))
-Ifop,25-29 septembre,1527,5,1,16,3.5,5,3,,23,,8,1.5,35,4,,Glucksmann_PP=3.0 (Faure (PS))
-Ifop,25-29 septembre,1527,6,0.5,15,3,6,3,,24,,8,1.5,35,4,,Glucksmann_PP=3.0 (Royal (PS))
-Ifop,25-29 septembre,1527,7,1,17,3.5,5.5,3,,23,,8,1,35,3,,Glucksmann_PP=3.0 (Guedj (PS))
-Ifop,25-29 septembre,1527,8,1,17,3.5,6,1,,23,,9,1.5,35,3,,Glucksmann_PP=1.0 (Maurel (GRS))
-Ifop,25-29 septembre,1527,9,0.5,16,2.5,5,8,,22,,7,1,34,4,,Glucksmann_PP=8.0 (Hollande (PS))
-Ifop,25-29 septembre,1527,10,0.5,14,2,3,9,7,15,,5,1,31,4,8.5,Autre=8.5 (Lisnard (3.5); Ruffin (3); Villepin (2))
-Harris,22-24 septembre,1974,1,1,17,3,5,8,13,,,10,2,36,5,,Glucksmann_PP=8.0 (Hollande (PS))
-Harris,22-24 septembre,1974,2,1,18,3,4,7,,16,,9,2,35,5,,Glucksmann_PP=7.0 (Hollande (PS))
-Harris,22-24 septembre,1974,3,1,17,2,3,11,12,,,10,2,36,6,,
-Harris,22-24 septembre,1974,4,1,18,2,3,10,,16,,8,2,35,5,,
-Harris,22-24 septembre,1974,5,1,17,2,3,10,5,13,,7,2,35,5,,
-YouGov,17-21 septembre,1103,1,1,17,2,3,8,9,12,,8,2,34,6,,
-YouGov,17-21 septembre,1103,2,1,17,2,3,9,3,13,,8,2,35,6,,Attal_RE=3.0 (Le Maire)
-YouGov,17-21 septembre,1103,3,1,17,3,3,9,14,,,10,2,35,5,,
-YouGov,17-21 septembre,1103,4,1,18,3,7,,,17,,8,2,37,5,,
-YouGov,17-21 septembre,1103,5,1,16,2,4,5,9,12,,8,2,35,6,,Glucksmann_PP=5.0 (Faure (PS))
-YouGov,17-21 septembre,1103,6,1,15,1,2,5,8,10,,7,2,33,5,11.0,Autre=11.0 (Hollande (4); Lisnard (2); Ruffin (2); Villepin (2); Bertrand (1))
-Cluster17,15-16 septembre,1943,1,0.5,19,2,2.5,12,,19,,7.5,3,31,3.5,,
-Cluster17,15-16 septembre,1943,2,0.5,20,2.5,2.5,14,13.5,,,9.5,3,31,3.5,,
-Cluster17,15-16 septembre,1943,3,1,19.5,3,3,7.5,,19.5,,7.5,4,30,,5,Glucksmann_PP=7.5 (Hollande (PS)); Autre=5.0 (Lisnard)
-Ifop,9-11 septembre,1548,1,0.5,17,2,3,9,7,14,,6.5,2,35,4,,
-OpinionWay,9-10 septembre,1001,1,1,16,3,3,7,8,16,,7,2,32,2,3.0,Glucksmann_PP=7.0 (Hollande (PS)); Autre=3.0 (Bouamrane (1); Lisnard (2))
-OpinionWay,9-10 septembre,1001,2,1,17,4,3,3,8,16,,7,3,33,2,3.0,Glucksmann_PP=3.0 (Royal (PS)); Autre=3.0 (Bouamrane (1); Lisnard (2))
-OpinionWay,9-10 septembre,1001,3,0.5,17,2,3,9,7,15,,7,2,34,2,2.5,Arthaud_LO=0.5 (reported as <1); Autre=2.5 (Bouamrane (<1); Lisnard (2))
-Harris,8-10 septembre,2052,1,1,17,3,4,7,15,,,10,2,36,5,,Glucksmann_PP=7.0 (Hollande (PS))
-Harris,8-10 septembre,2052,2,1,17,3,4,7,,19,,9,2,33,5,,Glucksmann_PP=7.0 (Hollande (PS))
-Harris,8-10 septembre,2052,3,1,17,2,3,12,14,,,9,2,35,5,,
-Harris,8-10 septembre,2052,4,1,17,3,3,10,,17,,7,3,34,5,,
-Harris,8-10 septembre,2052,5,1,16,2,3,9,8,14,,7,2,33,5,,
-OpinionWay,8-9 septembre,1001,1,0.5,15,2,3,9,8,15,,8,2,34,4,,Arthaud_LO=0.5 (reported as <1)
-OpinionWay,8-9 septembre,1001,2,1,15,2,4,12,14,,,12,2,34,4,,
-OpinionWay,8-9 septembre,1001,3,1,15,1,3,10,,19,,10,3,34,4,,
-Ipsos,3-9 septembre,13060,1,0.5,15.5,2.5,4,11.5,6,14,,7,2,33,4,,
-Ipsos,3-9 septembre,13060,2,0.5,15.5,2.5,4,12.5,,17.5,,8,2,33.5,4,,
-Ipsos,3-9 septembre,13060,3,0.5,15.5,2.5,4.5,13.5,13,,,10,2,34,4.5,,
-Ipsos,3-9 septembre,13060,4,0.5,16.5,3,5,4.5,7.5,16,,7,2,34,4,,Glucksmann_PP=4.5 (Faure (PS))
-Ipsos,3-9 septembre,13060,5,0.5,16.5,3.5,5.5,5,,21,,7.5,2,34.5,4,,Glucksmann_PP=5.0 (Faure (PS))
-Ipsos,3-9 septembre,13060,6,0.5,17,3.5,5.5,5.5,15.5,,,10.5,2.5,35,4.5,,Glucksmann_PP=5.5 (Faure (PS))
-OpinionWay,2-4 septembre,1034,1,1,16,2,3,12,7,15,,7,,34,3,0.5,Autre=0.5 (Bonnal; reported as <1)
-OpinionWay,2-3 septembre,1003,1,1,17,3,4,13,13,,,11,,35,3,,
-OpinionWay,2-3 septembre,1003,2,1,16,3,4,12,,20,,8,,33,3,,
-OpinionWay,2-3 septembre,1003,3,1,17,2,3,11,7,15,,7,,34,3,,
-Ipsos,31 août - 2 septembre,1500,1,0.5,15,2.5,3.5,11.5,7.5,14.5,,6,2,34,3,,
-Ipsos,31 août - 2 septembre,1500,2,0.5,15,2.5,4,12,,19,,7.5,2,34.5,3,,
-Ipsos,31 août - 2 septembre,1500,3,0.5,15,2.5,4,14,14,,,9.5,2.5,35,3,,
-Ipsos,31 août - 2 septembre,1500,4,1,16,3,5,4.5,8.5,16.5,,6,2,34.5,3,,Glucksmann_PP=4.5 (Faure (PS))
-Ipsos,31 août - 2 septembre,1500,5,1,16.5,3.5,5,4.5,,22.5,,7.5,2,34.5,3,,Glucksmann_PP=4.5 (Faure (PS))
-Ipsos,31 août - 2 septembre,1500,6,1,17,3.5,5.5,5.5,15.5,,,10,2.5,36,3.5,,Glucksmann_PP=5.5 (Faure (PS))
-Cluster17,31 août - 1er septembre,1711,1,1,18,2,2,11.5,,18,3.5,7.5,3,30,3.5,,
-Cluster17,31 août - 1er septembre,1711,2,1,18,2,2.5,11.5,13.5,,4,9,3,31.5,4,,
-Cluster17,31 août - 1er septembre,1711,3,1,17,2,,11,,17,,6.5,2,29,3,11.5,Autre=11.5 (Ruffin (4); Lisnard (4); Villepin (3.5))
-Elabe,26-28 août,1501,1,1.5,14,3,3.5,11.5,,17,2,6.5,3,34,4,,
-Elabe,26-28 août,1501,2,1.5,14,3,3,14,12,,2.5,9.5,2,34.5,4,,
-Elabe,26-28 août,1501,3,2,14,3.5,4,7.5,,19.5,,6,2.5,34,4,3,"Glucksmann_PP=7.5 (Hollande (PS)); Autre=3.0 (Lisnard)"
-Elabe,26-28 août,1501,4,1.5,14,4,,8,12.5,,,9,2.5,34.5,4.5,9.5,"Glucksmann_PP=8.0 (Hollande (PS)); Autre=9.5 (Ruffin (6); Lisnard (3.5))"
-Elabe,26-28 août,1501,5,1.5,14.5,4.5,4,3.5,,20.5,2.5,7,2.5,35.5,4,,Glucksmann_PP=3.5 (Faure (PS))
-Elabe,26-28 août,1501,6,1.5,14.5,3,,12.5,6.5,14.5,,7,2.5,34,4,,
-Ifop,24-25 août,1598,1,0.5,16,3,3,11,8,14.5,,6,1.5,33,3.5,,
-Ifop,24-25 août,1598,2,1,17,3,3,12,,18,,8,1.5,33,3.5,,
-Ifop,24-25 août,1598,3,0.5,17,3,3,15,14,,,9,1.5,34,3,,
-Ifop,24-25 août,1598,4,1,18,,,15,,19,,8,2.5,33,3.5,,
-Ifop,24-25 août,1598,5,1.5,18.5,,,17,15,,,9,2,34,3,,
-Ifop,24-25 août,1598,6,1.5,19,,,12,,21,,8,2,34,2.5,,Glucksmann_PP=12.0 (Hollande (PS))
-Ifop,24-25 août,1598,7,1,17,3,3,18,6,,,12,2,35,3,,Attal_RE=6.0 (Le Maire)
-Harris,18-19 août,1764,1,1,17,3,4,8,14,,,9,2,38,4,,Glucksmann_PP=8.0 (Hollande (PS))
-Harris,18-19 août,1764,2,1,17,3,4,8,,19,,7,2,35,4,,Glucksmann_PP=8.0 (Hollande (PS))
-Harris,18-19 août,1764,3,1,17,2,3,11,15,,,9,2,37,3,,
-Harris,18-19 août,1764,4,1,17,3,3,10,,17,,7,3,35,4,,
-Harris,18-19 août,1764,5,1,16,2,3,10,8,14,,6,2,35,3,,
-Cluster17,22-24 juillet,1506,1,1,18,2,3,10,,18,3,8,3,30,4,,
-Cluster17,22-24 juillet,1506,2,1,18,2,3,10,14,,4,10,4,30,4,,
-Elabe,9-10 juillet,1503,1,1,16,2.5,3.5,10.5,,16.5,2.5,8,1.5,35,3,,
-Elabe,9-10 juillet,1503,2,1.5,14.5,2.5,3.5,11,13.5,,3.5,11,1.5,34,3.5,,
-Elabe,9-10 juillet,1503,3,1.5,14.5,2,,9,,19,,9,1.5,35,2.5,6,Glucksmann_PP=9.0 (Hollande (PS)); Autre=6.0 (Ruffin)
-Elabe,9-10 juillet,1503,4,1.5,15,2.5,,8,15.5,,,11,1.5,35.5,3.5,6,Glucksmann_PP=8.0 (Hollande (PS)); Autre=6.0 (Ruffin)
-Elabe,9-10 juillet,1503,5,1,14.5,2.5,4,8.5,7.5,14,,8.5,1.5,35,3,,
-Elabe,9-10 juillet,1503,6,2,15,3,4,8,,18,3,8,1.5,34.5,3,,Glucksmann_PP=8.0 (Hollande (PS))
-Verian,8-10 juillet,1047,1,,15,2,,11,8,17,,7,,37,3,,
-OpinionWay,8-9 juillet,963,1,0.5,13,2,5,9,7,18,,8,,35,3,,Arthaud_LO=0.5 (reported as <1)
-OpinionWay,8-9 juillet,963,2,1,15,2,5,10,16,,,12,,36,3,,
-OpinionWay,8-9 juillet,963,3,1,15,2,4,9,,22,,9,,34,4,,
-Ifop,7-8 juillet,984,1,0.5,15,2,4,12,15,,,10,2,36,3.5,,
-Ifop,7-8 juillet,984,2,0.5,15,3,3.5,9,,19,,8,2,36,4,,
-Harris,7-8 juillet,1592,1,1,16,3,5,8,16,,,8,2,36,5,,Glucksmann_PP=8.0 (Hollande (PS))
-Harris,7-8 juillet,1592,2,1,16,3,4,8,,20,,8,1,35,4,,Glucksmann_PP=8.0 (Hollande (PS))
-Harris,7-8 juillet,1592,3,1,16,3,3,11,16,,,9,1,36,4,,
-Harris,7-8 juillet,1592,4,1,16,2,3,11,,20,,8,1,34,4,,
-Harris,7-8 juillet,1592,5,1,16,2,2,10,8,14,,7,1,35,4,,
-Ifop,22-24 juin,1415,1,0.5,13,3,2.5,9,8,14,,8,2,36,4,,RN=36.0 (Bardella)
-Ifop,22-24 juin,1415,2,0.5,13,3,3.5,10,,19,,9,2,36,4,,RN=36.0 (Bardella)
-Ifop,22-24 juin,1415,3,0.5,13,2.5,3.5,11,15,,,11,2,37,4.5,,RN=37.0 (Bardella)
-Ifop,22-24 juin,1415,4,1,12,3,4,9,,20,,11,2,32,6,,RN=32.0 (Le Pen)
-Ifop,22-24 juin,1415,5,1,13,3,3,11,15,,,14,3,32,5,,RN=32.0 (Le Pen)
-Ifop,22-24 juin,1415,6,1.5,15,9,,,,21,,10,3,37,3.5,,Roussel_PCF=9.0 (Hollande (PS)); RN=37.0 (Bardella)
-Ifop,22-24 juin,1415,7,1.5,14,11,,,,20,,11,2.5,36,4,,Roussel_PCF=11.0 (Glucksmann); RN=36.0 (Bardella)
-Ifop,22-24 juin,1415,8,1,13,2.5,3.5,8,,19,,9,2.5,35,4.5,2,RN=35.0 (Bardella); Autre=2.0 (Lisnard)
-OpinionWay,10-11 juin,1001,1,1,16,,,16,,19,,9,2,34,3,,RN=34.0 (Bardella / Le Pen)
-OpinionWay,10-11 juin,1001,2,1,13,3,5,13,,19,,8,2,33,3,,RN=33.0 (Bardella / Le Pen)
-OpinionWay,10-11 juin,1001,3,1,13,4,4,14,14,,,9,2,35,4,,RN=35.0 (Bardella / Le Pen)
-Ipsos,27-28 mai,1500,1,1,13,3,4,11,8.5,13,,7.5,1.5,33.5,4,,RN=33.5 (Bardella)
-Ipsos,27-28 mai,1500,2,1,13,3,4,11,8.5,14,,8.5,1.5,31,4.5,,RN=31.0 (Le Pen)
-Ipsos,27-28 mai,1500,3,1,13.5,4,4,7,9.5,13.5,,8,1.5,34,4,,Glucksmann_PP=7.0 (Hollande (PS)); RN=34.0 (Bardella)
-Ipsos,27-28 mai,1500,4,1,13.5,4,4,7,9.5,14.5,,8.5,1.5,32,4.5,,Glucksmann_PP=7.0 (Hollande (PS)); RN=32.0 (Le Pen)
-Ipsos,27-28 mai,1500,5,1,13,3,4,14,14.5,,,10,1.5,35,4,,RN=35.0 (Bardella)
-Ipsos,27-28 mai,1500,6,1,13,3,4,13,,17.5,,9,1.5,34,4,,RN=34.0 (Bardella)
-Ipsos,27-28 mai,1500,7,1,13.5,3.5,5,8,17.5,,,10,1.5,36,4,,Glucksmann_PP=8.0 (Hollande (PS)); RN=36.0 (Bardella)
-Ipsos,27-28 mai,1500,8,1,13.5,4,5,7.5,,19,,9,1.5,35.5,4,,Glucksmann_PP=7.5 (Hollande (PS)); RN=35.5 (Bardella)
-Ifop,26-28 mai,1501,1,0.5,13,2.5,4,9,9,14,,8,2,34,4,,RN=34.0 (Bardella)
-Ifop,26-28 mai,1501,2,0.5,13,3.5,4,10,,18,2.5,9,2,34,3.5,,RN=34.0 (Bardella)
-Ifop,26-28 mai,1501,3,0.5,13,3,4,11,16,,3,10,2.5,34,3,,RN=34.0 (Bardella)
-Ifop,26-28 mai,1501,4,0.5,13,3,4,11,,19,2,9,1.5,33,4,,RN=33.0 (Le Pen)
-Ifop,26-28 mai,1501,5,0.5,13,3,3.5,11.5,16,,3,11.5,2,32,4,,RN=32.0 (Le Pen)
-Ifop,26-28 mai,1501,6,0.5,14,4,5,8,,20,,9,1.5,34,4,,Glucksmann_PP=8.0 (Hollande (PS)); RN=34.0 (Bardella)
-Ifop,26-28 mai,1501,7,1,13.5,3.5,5,8,18.5,,,10,2,35,3.5,,Glucksmann_PP=8.0 (Hollande (PS)); RN=35.0 (Bardella)
-Ifop,26-28 mai,1501,8,0.5,12.5,3,4,9,,20,,9,2,34,3,3,RN=34.0 (Bardella); Autre=3.0 (Ruffin)
-Ifop,26-28 mai,1501,9,0.5,13.5,6,4,4,,21,,10,2.5,35,3.5,,Glucksmann_PP=4.0 (Faure (PS)); RN=35.0 (Bardella)
-Ifop,26-28 mai,1501,10,1.5,15,11,,,,22,,10,2.5,34,4,,Roussel_PCF=11.0 (Hollande (PS)); RN=34.0 (Bardella)
-Ifop,26-28 mai,1501,11,1,15,12,,,,22,,10,3,33,4,,Roussel_PCF=12.0 (Glucksmann); RN=33.0 (Bardella)
-Harris,25-27 mai,1744,1,1,15,3,3,10,,17,,9,2,34,6,,RN=34.0 (Bardella)
-Harris,25-27 mai,1744,2,1,15,4,3,11,14,,,10,2,34,6,,RN=34.0 (Bardella)
-Harris,25-27 mai,1744,3,1,14,3,3,11,,19,,10,2,31,6,,RN=31.0 (Le Pen)
-Harris,25-27 mai,1744,4,1,15,4,3,11,15,,,11,2,32,6,,RN=32.0 (Le Pen)
-Harris,25-27 mai,1744,5,1,14,3,3,10,9,13,,8,2,32,5,,RN=32.0 (Bardella)
-Odoxa,20-21 mai,1005,1,0.5,16,2.5,4,11,,17,,9,2,32,6,,RN=32.0 (Bardella)
-Harris,28-30 avril,1725,1,1,12,4,4,11,,19,,9,1,34,5,,RN=34.0 (Bardella)
-Harris,28-30 avril,1725,2,1,13,3,4,12,14,,,12,1,35,5,,RN=35.0 (Bardella)
-Harris,28-30 avril,1725,3,1,12,4,4,11,,19,,10,1,32,6,,RN=32.0 (Le Pen)
-Harris,28-30 avril,1725,4,1,12,4,4,12,14,,,13,2,33,5,,RN=33.0 (Le Pen)
-Elabe,25-27 mars,1504,1,0.5,10.5,3,4.5,10.5,,20.5,3,7,2.5,35,3,,RN=35.0 (Bardella)
-Elabe,25-27 mars,1504,2,0.5,11.5,3.5,5,8.5,,22,2.5,8.5,3,31.5,3.5,,RN=31.5 (Le Pen)
-Elabe,25-27 mars,1504,3,1,12,4,4.5,4.5,,25.5,3,,2.5,38,5,,Glucksmann_PP=4.5 (Faure (PS)); RN=38.0 (Bardella); Zemmour_REC=5.0 (Knafo)
-Elabe,25-27 mars,1504,4,1,12,2.5,4,12.5,11.5,,6,10,2.5,34,4,,RN=34.0 (Le Pen); Zemmour_REC=4.0 (Knafo)
-Elabe,25-27 mars,1504,5,0.5,13,3,5,12.5,8,,5,8.5,2.5,38.5,3.5,,Attal_RE=8.0 (Darmanin); RN=38.5 (Bardella); Zemmour_REC=3.5 (Knafo)
-Elabe,25-27 mars,1504,6,1,11,3,8,12,6.5,,5.5,9.5,2.5,37.5,3.5,,Tondelier_LE=8.0 (Ruffin); Attal_RE=6.5 (Lecornu); RN=37.5 (Bardella)
-Odoxa,25-26 mars,1299,1,1,12,2,5,10,,21,,8,2,34,5,,RN=34.0 (Bardella); Zemmour_REC=5.0 (Knafo)
-Odoxa,25-26 mars,1299,2,1,13,2,4,10,,25,,,2,38,5,,RN=38.0 (Bardella); Zemmour_REC=5.0 (Knafo)
-Harris,22 mars,1062,1,1,11,3,4,14,,18,,7,2,35,5,,RN=35.0 (Bardella)
-Harris,22 mars,1062,2,1,11,3,5,14,13,,,10,2,36,5,,RN=36.0 (Bardella)
-Ifop,26-27 février,1393,1,1,11,2,4,10,,16,3.5,10,2.5,36,4,,RN=36.0 (Bardella)
-Ifop,26-27 février,1393,2,1,10,2,4,11,,16,5,11,2,34,4,,RN=34.0 (Le Pen)
-Ifop,26-27 février,1393,3,2,10,3,4,12,11,,4,12,2,36,4,,RN=36.0 (Bardella)
-Ifop,26-27 février,1393,4,2,11,2,4.5,12,10,,4.5,12,3,35,4,,RN=35.0 (Le Pen)
-Ifop,26-27 février,1393,5,1.5,10,3,4,13,8,,5,13,2.5,37,3,,Attal_RE=8.0 (Darmanin); RN=37.0 (Bardella)
-Ifop,26-27 février,1393,6,2,10,3,4.5,13,6,,5,13,3,37,3.5,,Attal_RE=6.0 (Lecornu); RN=37.0 (Bardella)
-Ifop,26-27 février,1393,7,2,12,2.5,4.5,11,,23,,,3,37,5,,RN=37.0 (Bardella)
-Ifop,26-27 février,1393,8,2,12,3,5,16,,,,17,3,38,4,,RN=38.0 (Bardella)
-Ifop,26-27 février,1393,9,2,11,3,5,8,,18,,11,2,36,4,,Glucksmann_PP=8.0 (Hollande (PS)); RN=36.0 (Bardella)
-Ifop,26-27 février,1393,10,2,11,3,5,5,,19,,11,3.5,36,4.5,,Glucksmann_PP=5.0 (Faure (PS)); RN=36.0 (Bardella)
+pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Lisnard_NE,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
+Ifop,17-19 octobre,1928,1,0.5,16.5,3,3,13.5,5,12,,,5,2,36,3.5,,
+Ifop,17-19 octobre,1928,2,0.5,16.5,2.5,3,14,,15,,,7.5,1.5,36,3.5,,
+Ifop,17-19 octobre,1928,3,0.5,16,2,3,16,13,,,,7,1.5,38,3,,
+Ifop,17-19 octobre,1928,4,0.5,18,,,16,,16,,,6.5,2.5,37,3.5,,
+Ifop,17-19 octobre,1928,5,0.5,20,,,10,6.5,14,,,6,2.5,38,3,,Glucksmann_PP=10.0 (Hollande (PS))
+Ifop,17-19 octobre,1928,6,0,15,2,2.5,12,4,12,5.5,,5.5,1.5,34,3,3.0,Autre=3.0 (Ruffin (1.5); Villepin (1.5))
+Ifop,17-19 octobre,1928,7,0.5,15.5,2,3,13,5,13,7,,,2,36,3,,
+Elabe,14-16 octobre,1701,1,1,15,1.5,3,15.5,,16.5,,2,7,2.5,32.5,3.5,,
+Elabe,14-16 octobre,1701,2,1,16,2,2.5,16.5,10.5,,,3,9.5,2,33.5,3.5,,
+Elabe,14-16 octobre,1701,3,0.5,15.5,1.5,2.5,15,,15.5,5.5,,6.5,3,31.5,3,,
+Elabe,14-16 octobre,1701,4,0.5,16,1.5,,16.5,9.5,,6.5,,9,2.5,31,3.5,3,Autre=3.0 (Ruffin)
+Elabe,14-16 octobre,1701,5,0.5,15.5,1.5,2.5,15.5,4.5,13.5,,,7.5,3,32.5,3.5,,
+Elabe,14-16 octobre,1701,6,1,15,1,2.5,16,,16.5,,,7.5,2.5,33.5,3,1.5,Autre=1.5 (Polony)
+Cluster17,14-15 octobre,1263,1,0.5,18,1.5,2,11,,17,7,,7,2,31,3,,
+Cluster17,14-15 octobre,1263,2,0.5,20,2,2,12,,20,,,,3,35.5,5,,
+Cluster17,14-15 octobre,1263,3,1,20,2,2,16,,,,,17.5,3,34.5,4,,
+Cluster17,14-15 octobre,1263,4,1,20.5,2,2,16,,,17,,,2,35.5,4,,
+Cluster17,14-15 octobre,1263,5,1,20,2,2,13.5,17,,,,,3.5,35.5,5.5,,
+YouGov,12-15 octobre,1094,1,0,15,3,6,12,6,10,,,6,3,36,3,,
+YouGov,12-15 octobre,1094,2,0,15,3,6,14,10,,,,9,3,37,4,,
+YouGov,12-15 octobre,1094,3,0,15,3,6,13,,13,,,7,3,36,3,,
+YouGov,12-15 octobre,1094,4,1,16,3,6,9,,15,,,7,3,37,4,,Glucksmann_PP=9.0 (Hollande (PS))
+YouGov,12-15 octobre,1094,5,0,13,2,5,12,6,8,4,,5,2,35,4,3.0,Autre=3.0 (Ruffin (2); Villepin (1))
+OpinionWay-2,13-14 octobre,1043,1,1,15,1,2,13,5,12,4,,6,1,35,5,0.5,Autre=0.5 (Bouamrane; reported as <1)
+OpinionWay-1,13-14 octobre,1043,1,0.5,14,3,3,13,7,12,,,7,2,35,4,,Arthaud_LO=0.5 (reported as <1)
+OpinionWay-1,13-14 octobre,1043,2,1,15,2,3,16,11,,,,9,2,37,4,,
+OpinionWay-1,13-14 octobre,1043,3,1,15,2,3,15,,15,,,8,2,35,4,,
+Ifop,12-14 octobre,1390,1,0,16,2,2,11.5,5,13,6,,5,1,32,3,3.5,Autre=3.5 (Ruffin (2); Villepin (1.5))
+Ifop,12-14 octobre,1390,2,0.5,17,2.5,2,16,13,,,,8,2,36,3,,
+Ifop,12-14 octobre,1390,3,0.5,16,3,2.5,13.5,,18,,,6.5,2,35,3,,
+Ifop,12-14 octobre,1390,4,0,16,2.5,2,14,6,14,,,6.5,2,34,3,,
+Harris,5-8 octobre,2004,1,1,19,2,5,7,12,,,,10,2,37,5,,Glucksmann_PP=7.0 (Hollande (PS))
+Harris,5-8 octobre,2004,2,1,18,3,4,7,,17,,,8,2,36,4,,Glucksmann_PP=7.0 (Hollande (PS))
+Harris,5-8 octobre,2004,3,1,18,2,3,11,12,,,,10,2,36,5,,
+Harris,5-8 octobre,2004,4,1,18,2,3,10,,17,,,7,2,36,4,,
+Harris,5-8 octobre,2004,5,1,18,2,2,10,5,13,,,7,2,35,5,,
+Odoxa,24 septembre - 7 octobre,12005,1,0.5,18,2,3,9.5,,17,,,6.5,2,37,4.5,,
+Odoxa,24 septembre - 7 octobre,12005,2,1,18.5,2,3.5,10.5,11,,,,9,2,38,4.5,,
+Ifop,25-29 septembre,1527,1,0.5,15,2.5,3,11,8,16,,,7,1,32,4,,
+Ifop,25-29 septembre,1527,2,0.5,16,2.5,3,11,,21,,,8,1.5,33,3.5,,
+Ifop,25-29 septembre,1527,3,1,15,2.5,4,13,15,,,,10,2,34,3.5,,
+Ifop,25-29 septembre,1527,4,1,17,3,5.5,4,17,,,,11,1,36,4.5,,Glucksmann_PP=4.0 (Faure (PS))
+Ifop,25-29 septembre,1527,5,1,16,3.5,5,3,,23,,,8,1.5,35,4,,Glucksmann_PP=3.0 (Faure (PS))
+Ifop,25-29 septembre,1527,6,0.5,15,3,6,3,,24,,,8,1.5,35,4,,Glucksmann_PP=3.0 (Royal (PS))
+Ifop,25-29 septembre,1527,7,1,17,3.5,5.5,3,,23,,,8,1,35,3,,Glucksmann_PP=3.0 (Guedj (PS))
+Ifop,25-29 septembre,1527,8,1,17,3.5,6,1,,23,,,9,1.5,35,3,,Glucksmann_PP=1.0 (Maurel (GRS))
+Ifop,25-29 septembre,1527,9,0.5,16,2.5,5,8,,22,,,7,1,34,4,,Glucksmann_PP=8.0 (Hollande (PS))
+Ifop,25-29 septembre,1527,10,0.5,14,2,3,9,7,15,,,5,1,31,4,8.5,Autre=8.5 (Lisnard (3.5); Ruffin (3); Villepin (2))
+Harris,22-24 septembre,1974,1,1,17,3,5,8,13,,,,10,2,36,5,,Glucksmann_PP=8.0 (Hollande (PS))
+Harris,22-24 septembre,1974,2,1,18,3,4,7,,16,,,9,2,35,5,,Glucksmann_PP=7.0 (Hollande (PS))
+Harris,22-24 septembre,1974,3,1,17,2,3,11,12,,,,10,2,36,6,,
+Harris,22-24 septembre,1974,4,1,18,2,3,10,,16,,,8,2,35,5,,
+Harris,22-24 septembre,1974,5,1,17,2,3,10,5,13,,,7,2,35,5,,
+YouGov,17-21 septembre,1103,1,1,17,2,3,8,9,12,,,8,2,34,6,,
+YouGov,17-21 septembre,1103,2,1,17,2,3,9,3,13,,,8,2,35,6,,Attal_RE=3.0 (Le Maire)
+YouGov,17-21 septembre,1103,3,1,17,3,3,9,14,,,,10,2,35,5,,
+YouGov,17-21 septembre,1103,4,1,18,3,7,,,17,,,8,2,37,5,,
+YouGov,17-21 septembre,1103,5,1,16,2,4,5,9,12,,,8,2,35,6,,Glucksmann_PP=5.0 (Faure (PS))
+YouGov,17-21 septembre,1103,6,1,15,1,2,5,8,10,,,7,2,33,5,11.0,Autre=11.0 (Hollande (4); Lisnard (2); Ruffin (2); Villepin (2); Bertrand (1))
+Cluster17,15-16 septembre,1943,1,0.5,19,2,2.5,12,,19,,,7.5,3,31,3.5,,
+Cluster17,15-16 septembre,1943,2,0.5,20,2.5,2.5,14,13.5,,,,9.5,3,31,3.5,,
+Cluster17,15-16 septembre,1943,3,1,19.5,3,3,7.5,,19.5,5,,7.5,4,30,,,Glucksmann_PP=7.5 (Hollande (PS))
+Ifop,9-11 septembre,1548,1,0.5,17,2,3,9,7,14,,,6.5,2,35,4,,
+OpinionWay,9-10 septembre,1001,1,1,16,3,3,7,8,16,,,7,2,32,2,3.0,Glucksmann_PP=7.0 (Hollande (PS)); Autre=3.0 (Bouamrane (1); Lisnard (2))
+OpinionWay,9-10 septembre,1001,2,1,17,4,3,3,8,16,,,7,3,33,2,3.0,Glucksmann_PP=3.0 (Royal (PS)); Autre=3.0 (Bouamrane (1); Lisnard (2))
+OpinionWay,9-10 septembre,1001,3,0.5,17,2,3,9,7,15,,,7,2,34,2,2.5,Arthaud_LO=0.5 (reported as <1); Autre=2.5 (Bouamrane (<1); Lisnard (2))
+Harris,8-10 septembre,2052,1,1,17,3,4,7,15,,,,10,2,36,5,,Glucksmann_PP=7.0 (Hollande (PS))
+Harris,8-10 septembre,2052,2,1,17,3,4,7,,19,,,9,2,33,5,,Glucksmann_PP=7.0 (Hollande (PS))
+Harris,8-10 septembre,2052,3,1,17,2,3,12,14,,,,9,2,35,5,,
+Harris,8-10 septembre,2052,4,1,17,3,3,10,,17,,,7,3,34,5,,
+Harris,8-10 septembre,2052,5,1,16,2,3,9,8,14,,,7,2,33,5,,
+OpinionWay,8-9 septembre,1001,1,0.5,15,2,3,9,8,15,,,8,2,34,4,,Arthaud_LO=0.5 (reported as <1)
+OpinionWay,8-9 septembre,1001,2,1,15,2,4,12,14,,,,12,2,34,4,,
+OpinionWay,8-9 septembre,1001,3,1,15,1,3,10,,19,,,10,3,34,4,,
+Ipsos,3-9 septembre,13060,1,0.5,15.5,2.5,4,11.5,6,14,,,7,2,33,4,,
+Ipsos,3-9 septembre,13060,2,0.5,15.5,2.5,4,12.5,,17.5,,,8,2,33.5,4,,
+Ipsos,3-9 septembre,13060,3,0.5,15.5,2.5,4.5,13.5,13,,,,10,2,34,4.5,,
+Ipsos,3-9 septembre,13060,4,0.5,16.5,3,5,4.5,7.5,16,,,7,2,34,4,,Glucksmann_PP=4.5 (Faure (PS))
+Ipsos,3-9 septembre,13060,5,0.5,16.5,3.5,5.5,5,,21,,,7.5,2,34.5,4,,Glucksmann_PP=5.0 (Faure (PS))
+Ipsos,3-9 septembre,13060,6,0.5,17,3.5,5.5,5.5,15.5,,,,10.5,2.5,35,4.5,,Glucksmann_PP=5.5 (Faure (PS))
+OpinionWay,2-4 septembre,1034,1,1,16,2,3,12,7,15,,,7,,34,3,0.5,Autre=0.5 (Bonnal; reported as <1)
+OpinionWay,2-3 septembre,1003,1,1,17,3,4,13,13,,,,11,,35,3,,
+OpinionWay,2-3 septembre,1003,2,1,16,3,4,12,,20,,,8,,33,3,,
+OpinionWay,2-3 septembre,1003,3,1,17,2,3,11,7,15,,,7,,34,3,,
+Ipsos,31 août - 2 septembre,1500,1,0.5,15,2.5,3.5,11.5,7.5,14.5,,,6,2,34,3,,
+Ipsos,31 août - 2 septembre,1500,2,0.5,15,2.5,4,12,,19,,,7.5,2,34.5,3,,
+Ipsos,31 août - 2 septembre,1500,3,0.5,15,2.5,4,14,14,,,,9.5,2.5,35,3,,
+Ipsos,31 août - 2 septembre,1500,4,1,16,3,5,4.5,8.5,16.5,,,6,2,34.5,3,,Glucksmann_PP=4.5 (Faure (PS))
+Ipsos,31 août - 2 septembre,1500,5,1,16.5,3.5,5,4.5,,22.5,,,7.5,2,34.5,3,,Glucksmann_PP=4.5 (Faure (PS))
+Ipsos,31 août - 2 septembre,1500,6,1,17,3.5,5.5,5.5,15.5,,,,10,2.5,36,3.5,,Glucksmann_PP=5.5 (Faure (PS))
+Cluster17,31 août - 1er septembre,1711,1,1,18,2,2,11.5,,18,,3.5,7.5,3,30,3.5,,
+Cluster17,31 août - 1er septembre,1711,2,1,18,2,2.5,11.5,13.5,,,4,9,3,31.5,4,,
+Cluster17,31 août - 1er septembre,1711,3,1,17,2,,11,,17,,,6.5,2,29,3,11.5,Autre=11.5 (Ruffin (4); Lisnard (4); Villepin (3.5))
+Elabe,26-28 août,1501,1,1.5,14,3,3.5,11.5,,17,,2,6.5,3,34,4,,
+Elabe,26-28 août,1501,2,1.5,14,3,3,14,12,,,2.5,9.5,2,34.5,4,,
+Elabe,26-28 août,1501,3,2,14,3.5,4,7.5,,19.5,3,,6,2.5,34,4,,Glucksmann_PP=7.5 (Hollande (PS))
+Elabe,26-28 août,1501,4,1.5,14,4,,8,12.5,,,,9,2.5,34.5,4.5,9.5,Glucksmann_PP=8.0 (Hollande (PS)); Autre=9.5 (Ruffin (6); Lisnard (3.5))
+Elabe,26-28 août,1501,5,1.5,14.5,4.5,4,3.5,,20.5,,2.5,7,2.5,35.5,4,,Glucksmann_PP=3.5 (Faure (PS))
+Elabe,26-28 août,1501,6,1.5,14.5,3,,12.5,6.5,14.5,,,7,2.5,34,4,,
+Ifop,24-25 août,1598,1,0.5,16,3,3,11,8,14.5,,,6,1.5,33,3.5,,
+Ifop,24-25 août,1598,2,1,17,3,3,12,,18,,,8,1.5,33,3.5,,
+Ifop,24-25 août,1598,3,0.5,17,3,3,15,14,,,,9,1.5,34,3,,
+Ifop,24-25 août,1598,4,1,18,,,15,,19,,,8,2.5,33,3.5,,
+Ifop,24-25 août,1598,5,1.5,18.5,,,17,15,,,,9,2,34,3,,
+Ifop,24-25 août,1598,6,1.5,19,,,12,,21,,,8,2,34,2.5,,Glucksmann_PP=12.0 (Hollande (PS))
+Ifop,24-25 août,1598,7,1,17,3,3,18,6,,,,12,2,35,3,,Attal_RE=6.0 (Le Maire)
+Harris,18-19 août,1764,1,1,17,3,4,8,14,,,,9,2,38,4,,Glucksmann_PP=8.0 (Hollande (PS))
+Harris,18-19 août,1764,2,1,17,3,4,8,,19,,,7,2,35,4,,Glucksmann_PP=8.0 (Hollande (PS))
+Harris,18-19 août,1764,3,1,17,2,3,11,15,,,,9,2,37,3,,
+Harris,18-19 août,1764,4,1,17,3,3,10,,17,,,7,3,35,4,,
+Harris,18-19 août,1764,5,1,16,2,3,10,8,14,,,6,2,35,3,,
+Cluster17,22-24 juillet,1506,1,1,18,2,3,10,,18,,3,8,3,30,4,,
+Cluster17,22-24 juillet,1506,2,1,18,2,3,10,14,,,4,10,4,30,4,,
+Elabe,9-10 juillet,1503,1,1,16,2.5,3.5,10.5,,16.5,,2.5,8,1.5,35,3,,
+Elabe,9-10 juillet,1503,2,1.5,14.5,2.5,3.5,11,13.5,,,3.5,11,1.5,34,3.5,,
+Elabe,9-10 juillet,1503,3,1.5,14.5,2,,9,,19,,,9,1.5,35,2.5,6,Glucksmann_PP=9.0 (Hollande (PS)); Autre=6.0 (Ruffin)
+Elabe,9-10 juillet,1503,4,1.5,15,2.5,,8,15.5,,,,11,1.5,35.5,3.5,6,Glucksmann_PP=8.0 (Hollande (PS)); Autre=6.0 (Ruffin)
+Elabe,9-10 juillet,1503,5,1,14.5,2.5,4,8.5,7.5,14,,,8.5,1.5,35,3,,
+Elabe,9-10 juillet,1503,6,2,15,3,4,8,,18,,3,8,1.5,34.5,3,,Glucksmann_PP=8.0 (Hollande (PS))
+Verian,8-10 juillet,1047,1,,15,2,,11,8,17,,,7,,37,3,,
+OpinionWay,8-9 juillet,963,1,0.5,13,2,5,9,7,18,,,8,,35,3,,Arthaud_LO=0.5 (reported as <1)
+OpinionWay,8-9 juillet,963,2,1,15,2,5,10,16,,,,12,,36,3,,
+OpinionWay,8-9 juillet,963,3,1,15,2,4,9,,22,,,9,,34,4,,
+Ifop,7-8 juillet,984,1,0.5,15,2,4,12,15,,,,10,2,36,3.5,,
+Ifop,7-8 juillet,984,2,0.5,15,3,3.5,9,,19,,,8,2,36,4,,
+Harris,7-8 juillet,1592,1,1,16,3,5,8,16,,,,8,2,36,5,,Glucksmann_PP=8.0 (Hollande (PS))
+Harris,7-8 juillet,1592,2,1,16,3,4,8,,20,,,8,1,35,4,,Glucksmann_PP=8.0 (Hollande (PS))
+Harris,7-8 juillet,1592,3,1,16,3,3,11,16,,,,9,1,36,4,,
+Harris,7-8 juillet,1592,4,1,16,2,3,11,,20,,,8,1,34,4,,
+Harris,7-8 juillet,1592,5,1,16,2,2,10,8,14,,,7,1,35,4,,
+Ifop,22-24 juin,1415,1,0.5,13,3,2.5,9,8,14,,,8,2,36,4,,RN=36.0 (Bardella)
+Ifop,22-24 juin,1415,2,0.5,13,3,3.5,10,,19,,,9,2,36,4,,RN=36.0 (Bardella)
+Ifop,22-24 juin,1415,3,0.5,13,2.5,3.5,11,15,,,,11,2,37,4.5,,RN=37.0 (Bardella)
+Ifop,22-24 juin,1415,4,1,12,3,4,9,,20,,,11,2,32,6,,RN=32.0 (Le Pen)
+Ifop,22-24 juin,1415,5,1,13,3,3,11,15,,,,14,3,32,5,,RN=32.0 (Le Pen)
+Ifop,22-24 juin,1415,6,1.5,15,9,,,,21,,,10,3,37,3.5,,Roussel_PCF=9.0 (Hollande (PS)); RN=37.0 (Bardella)
+Ifop,22-24 juin,1415,7,1.5,14,11,,,,20,,,11,2.5,36,4,,Roussel_PCF=11.0 (Glucksmann); RN=36.0 (Bardella)
+Ifop,22-24 juin,1415,8,1,13,2.5,3.5,8,,19,2,,9,2.5,35,4.5,,RN=35.0 (Bardella)
+OpinionWay,10-11 juin,1001,1,1,16,,,16,,19,,,9,2,34,3,,RN=34.0 (Bardella / Le Pen)
+OpinionWay,10-11 juin,1001,2,1,13,3,5,13,,19,,,8,2,33,3,,RN=33.0 (Bardella / Le Pen)
+OpinionWay,10-11 juin,1001,3,1,13,4,4,14,14,,,,9,2,35,4,,RN=35.0 (Bardella / Le Pen)
+Ipsos,27-28 mai,1500,1,1,13,3,4,11,8.5,13,,,7.5,1.5,33.5,4,,RN=33.5 (Bardella)
+Ipsos,27-28 mai,1500,2,1,13,3,4,11,8.5,14,,,8.5,1.5,31,4.5,,RN=31.0 (Le Pen)
+Ipsos,27-28 mai,1500,3,1,13.5,4,4,7,9.5,13.5,,,8,1.5,34,4,,Glucksmann_PP=7.0 (Hollande (PS)); RN=34.0 (Bardella)
+Ipsos,27-28 mai,1500,4,1,13.5,4,4,7,9.5,14.5,,,8.5,1.5,32,4.5,,Glucksmann_PP=7.0 (Hollande (PS)); RN=32.0 (Le Pen)
+Ipsos,27-28 mai,1500,5,1,13,3,4,14,14.5,,,,10,1.5,35,4,,RN=35.0 (Bardella)
+Ipsos,27-28 mai,1500,6,1,13,3,4,13,,17.5,,,9,1.5,34,4,,RN=34.0 (Bardella)
+Ipsos,27-28 mai,1500,7,1,13.5,3.5,5,8,17.5,,,,10,1.5,36,4,,Glucksmann_PP=8.0 (Hollande (PS)); RN=36.0 (Bardella)
+Ipsos,27-28 mai,1500,8,1,13.5,4,5,7.5,,19,,,9,1.5,35.5,4,,Glucksmann_PP=7.5 (Hollande (PS)); RN=35.5 (Bardella)
+Ifop,26-28 mai,1501,1,0.5,13,2.5,4,9,9,14,,,8,2,34,4,,RN=34.0 (Bardella)
+Ifop,26-28 mai,1501,2,0.5,13,3.5,4,10,,18,,2.5,9,2,34,3.5,,RN=34.0 (Bardella)
+Ifop,26-28 mai,1501,3,0.5,13,3,4,11,16,,,3,10,2.5,34,3,,RN=34.0 (Bardella)
+Ifop,26-28 mai,1501,4,0.5,13,3,4,11,,19,,2,9,1.5,33,4,,RN=33.0 (Le Pen)
+Ifop,26-28 mai,1501,5,0.5,13,3,3.5,11.5,16,,,3,11.5,2,32,4,,RN=32.0 (Le Pen)
+Ifop,26-28 mai,1501,6,0.5,14,4,5,8,,20,,,9,1.5,34,4,,Glucksmann_PP=8.0 (Hollande (PS)); RN=34.0 (Bardella)
+Ifop,26-28 mai,1501,7,1,13.5,3.5,5,8,18.5,,,,10,2,35,3.5,,Glucksmann_PP=8.0 (Hollande (PS)); RN=35.0 (Bardella)
+Ifop,26-28 mai,1501,8,0.5,12.5,3,4,9,,20,,,9,2,34,3,3,RN=34.0 (Bardella); Autre=3.0 (Ruffin)
+Ifop,26-28 mai,1501,9,0.5,13.5,6,4,4,,21,,,10,2.5,35,3.5,,Glucksmann_PP=4.0 (Faure (PS)); RN=35.0 (Bardella)
+Ifop,26-28 mai,1501,10,1.5,15,11,,,,22,,,10,2.5,34,4,,Roussel_PCF=11.0 (Hollande (PS)); RN=34.0 (Bardella)
+Ifop,26-28 mai,1501,11,1,15,12,,,,22,,,10,3,33,4,,Roussel_PCF=12.0 (Glucksmann); RN=33.0 (Bardella)
+Harris,25-27 mai,1744,1,1,15,3,3,10,,17,,,9,2,34,6,,RN=34.0 (Bardella)
+Harris,25-27 mai,1744,2,1,15,4,3,11,14,,,,10,2,34,6,,RN=34.0 (Bardella)
+Harris,25-27 mai,1744,3,1,14,3,3,11,,19,,,10,2,31,6,,RN=31.0 (Le Pen)
+Harris,25-27 mai,1744,4,1,15,4,3,11,15,,,,11,2,32,6,,RN=32.0 (Le Pen)
+Harris,25-27 mai,1744,5,1,14,3,3,10,9,13,,,8,2,32,5,,RN=32.0 (Bardella)
+Odoxa,20-21 mai,1005,1,0.5,16,2.5,4,11,,17,,,9,2,32,6,,RN=32.0 (Bardella)
+Harris,28-30 avril,1725,1,1,12,4,4,11,,19,,,9,1,34,5,,RN=34.0 (Bardella)
+Harris,28-30 avril,1725,2,1,13,3,4,12,14,,,,12,1,35,5,,RN=35.0 (Bardella)
+Harris,28-30 avril,1725,3,1,12,4,4,11,,19,,,10,1,32,6,,RN=32.0 (Le Pen)
+Harris,28-30 avril,1725,4,1,12,4,4,12,14,,,,13,2,33,5,,RN=33.0 (Le Pen)
+Elabe,25-27 mars,1504,1,0.5,10.5,3,4.5,10.5,,20.5,,3,7,2.5,35,3,,RN=35.0 (Bardella)
+Elabe,25-27 mars,1504,2,0.5,11.5,3.5,5,8.5,,22,,2.5,8.5,3,31.5,3.5,,RN=31.5 (Le Pen)
+Elabe,25-27 mars,1504,3,1,12,4,4.5,4.5,,25.5,,3,,2.5,38,5,,Glucksmann_PP=4.5 (Faure (PS)); RN=38.0 (Bardella); Zemmour_REC=5.0 (Knafo)
+Elabe,25-27 mars,1504,4,1,12,2.5,4,12.5,11.5,,,6,10,2.5,34,4,,RN=34.0 (Le Pen); Zemmour_REC=4.0 (Knafo)
+Elabe,25-27 mars,1504,5,0.5,13,3,5,12.5,8,,,5,8.5,2.5,38.5,3.5,,Attal_RE=8.0 (Darmanin); RN=38.5 (Bardella); Zemmour_REC=3.5 (Knafo)
+Elabe,25-27 mars,1504,6,1,11,3,8,12,6.5,,,5.5,9.5,2.5,37.5,3.5,,Tondelier_LE=8.0 (Ruffin); Attal_RE=6.5 (Lecornu); RN=37.5 (Bardella)
+Odoxa,25-26 mars,1299,1,1,12,2,5,10,,21,,,8,2,34,5,,RN=34.0 (Bardella); Zemmour_REC=5.0 (Knafo)
+Odoxa,25-26 mars,1299,2,1,13,2,4,10,,25,,,,2,38,5,,RN=38.0 (Bardella); Zemmour_REC=5.0 (Knafo)
+Harris,22 mars,1062,1,1,11,3,4,14,,18,,,7,2,35,5,,RN=35.0 (Bardella)
+Harris,22 mars,1062,2,1,11,3,5,14,13,,,,10,2,36,5,,RN=36.0 (Bardella)
+Ifop,26-27 février,1393,1,1,11,2,4,10,,16,,3.5,10,2.5,36,4,,RN=36.0 (Bardella)
+Ifop,26-27 février,1393,2,1,10,2,4,11,,16,,5,11,2,34,4,,RN=34.0 (Le Pen)
+Ifop,26-27 février,1393,3,2,10,3,4,12,11,,,4,12,2,36,4,,RN=36.0 (Bardella)
+Ifop,26-27 février,1393,4,2,11,2,4.5,12,10,,,4.5,12,3,35,4,,RN=35.0 (Le Pen)
+Ifop,26-27 février,1393,5,1.5,10,3,4,13,8,,,5,13,2.5,37,3,,Attal_RE=8.0 (Darmanin); RN=37.0 (Bardella)
+Ifop,26-27 février,1393,6,2,10,3,4.5,13,6,,,5,13,3,37,3.5,,Attal_RE=6.0 (Lecornu); RN=37.0 (Bardella)
+Ifop,26-27 février,1393,7,2,12,2.5,4.5,11,,23,,,,3,37,5,,RN=37.0 (Bardella)
+Ifop,26-27 février,1393,8,2,12,3,5,16,,,,,17,3,38,4,,RN=38.0 (Bardella)
+Ifop,26-27 février,1393,9,2,11,3,5,8,,18,,,11,2,36,4,,Glucksmann_PP=8.0 (Hollande (PS)); RN=36.0 (Bardella)
+Ifop,26-27 février,1393,10,2,11,3,5,5,,19,,,11,3.5,36,4.5,,Glucksmann_PP=5.0 (Faure (PS)); RN=36.0 (Bardella)
