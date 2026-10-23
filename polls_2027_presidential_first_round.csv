@@ -1,4 +1,5 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Lisnard_NE,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
+OpinionWay,21-22 octobre,973,1,0.5,16,1,1,13,4,12,6,,6,1,36,4,0.5,Arthaud_LO=0.5 (reported as <1); Autre=0.5 (Bouamrane; reported as <1)
 Ifop,17-19 octobre,1928,1,0.5,16.5,3,3,13.5,5,12,,,5,2,36,3.5,,
 Ifop,17-19 octobre,1928,2,0.5,16.5,2.5,3,14,,15,,,7.5,1.5,36,3.5,,
 Ifop,17-19 octobre,1928,3,0.5,16,2,3,16,13,,,,7,1.5,38,3,,
