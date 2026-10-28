@@ -111,7 +111,7 @@ Latest polls: Ipsos (n=1500, 21–22 October, four scenarios) — RN (Le Pen)
 scenarios), Attal 4–9.5% (two scenarios), Retailleau 5.5–11.5%, Lisnard 6.5%
 (one scenario); OpinionWay (n=973, 21–22 October, one scenario) — RN (Le Pen)
 36%, Mélenchon 16%, Glucksmann 13%, Philippe 12%, Retailleau 6%, Lisnard 6%,
-Attal 4%; Cluster17 (n=3000, 19–22 October, three scenarios) — RN (Le Pen)
+Attal 4%; Cluster17 (n=2817, 19–22 October, three scenarios) — RN (Le Pen)
 30.5–33%, Mélenchon 18.5–19.5%, Glucksmann 6.5–14% (one scenario a
 Hollande-for-Glucksmann substitution), Philippe 16–17% (two scenarios), Attal
 12% (one scenario), Retailleau 7–10%, Lisnard 8% (one scenario); Harris (n=2094, 19–21 October) — RN (Le Pen) 33–35%, Mélenchon
