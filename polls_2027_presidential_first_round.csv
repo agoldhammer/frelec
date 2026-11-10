@@ -1,4 +1,9 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Lisnard_NE,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
+Harris,3-5 novembre,2101,1,1,19,1,2,11,,12,9,2,5,1,34,3,,
+Harris,3-5 novembre,2101,2,1,19,1,2,12,9,,9,2,6,1,35,3,,
+Harris,3-5 novembre,2101,3,1,18,2,2,11,6,11,,,7,2,36,4,,
+Harris,3-5 novembre,2101,4,1,19,2,2,12,,14,,,8,2,36,4,,
+Harris,3-5 novembre,2101,5,1,19,2,3,13,10,,,,10,2,36,4,,
 Ifop,27-29 octobre,1501,1,0.5,18,2,3,10,5,9.5,7,,4,1.5,35,4.5,,
 Ifop,27-29 octobre,1501,2,0.5,17.5,2,3,13,9,,7.5,,5,2,36,4.5,,
 Ifop,27-29 octobre,1501,3,1,17.5,1.5,3.5,11.5,,15,,,7,2,37,4,,
