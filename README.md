@@ -61,7 +61,7 @@ python3 parse_polls.py /tmp/frelec_raw.wiki polls_2027_second_round.csv --second
 First-round voting-intention polls, January–November 2026, scraped from the French
 Wikipedia article
 ["Liste de sondages sur l'élection présidentielle française de 2027"](https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027)
-(pulled 2026-11-09).
+(pulled 2026-11-11).
 
 David Lisnard (Nouvelle Énergie) gained their own column starting with the
 17–19 October 2026 Ifop poll's sub-table ("Octobre-décembre 2026"). Earlier
@@ -106,7 +106,11 @@ Lecornu, etc.). A share Wikipedia reports only as an upper bound (e.g. `<1`)
 is encoded as the midpoint of that bound (`0.5`), with the original reading
 kept in `notes`.
 
-Latest polls: Harris (n=2101, 3–5 November, five scenarios) — RN (Le Pen)
+Latest polls: Cluster17 (n=1164, 9–10 November, three scenarios) — RN (Le Pen)
+27–30.5%, Mélenchon 19–20.5%, Glucksmann 8–11%, Philippe 8–13.5% (two
+scenarios), Lisnard 8–10%, Retailleau 5–5.5%, Attal 2% (one scenario);
+Christine Lagarde was tested as an independent candidate, folded into
+`Autre`, in two scenarios (8–14%); Harris (n=2101, 3–5 November, five scenarios) — RN (Le Pen)
 34–36%, Mélenchon 18–19%, Glucksmann 11–13%, Philippe 11–12% (two
 scenarios), Attal 6–10% (three scenarios), Retailleau 5–10%, Lisnard 9%
 (two scenarios), Villepin 2% (two scenarios); Ifop (n=1501, 27–29 October, four scenarios) — RN (Le Pen)
@@ -148,7 +152,7 @@ included in this CSV — ask if you want those pulled too.
 
 Second-round (runoff) hypothetical match-up polls, January 2024 – November 2026,
 scraped from the same Wikipedia page's "Sondages concernant le second tour"
-section (pulled 2026-11-09). Each subsection there ("Hypothèse X – Y") polls
+section (pulled 2026-11-11). Each subsection there ("Hypothèse X – Y") polls
 one specific pairing — Attal, Mélenchon, Philippe, Glucksmann and Retailleau
 each against the RN candidate (Bardella through early 2026, Le Pen from her
 2026-07-07 candidacy onward), and, from Ifop's 24–25 August 2026 poll, a first
