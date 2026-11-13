@@ -1,7 +1,11 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Lisnard_NE,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
-Cluster17,9-10 novembre,1164,1,0.5,20.5,2.5,1.5,10,,,10,,5.5,2,30.5,3,14,Autre=14.0 (Lagarde)
-Cluster17,9-10 novembre,1164,2,0.5,20,2,1.5,11,,13.5,10,,5,3,30.5,3,,
-Cluster17,9-10 novembre,1164,3,0.5,19,1.5,1,8,2,8,8,,5,2,27,2,16.0,Autre=16.0 (Asselineau (1); Lagarde (8); Polony (2.5); Riner (2); Ruffin (1.5); Villepin (1))
+Opinionway,9-10 novembre,982,1,1,17,1,3,11,4,11,10,,4,1,34,3,,
+Opinionway,9-10 novembre,982,2,1,16,2,3,12,,12,11,,4,2,34,3,,
+Opinionway,9-10 novembre,982,3,1,16,1,3,13,10,,12,,6,1,34,3,,
+Cluster17,9-10 novembre,1164,1,0.5,20,2,1.5,11,,13.5,10,,5,3,30.5,3,,
+Cluster17,9-10 novembre,1164,2,0.5,20.5,2,1.5,11.5,11,,10,,6,3,31,3,,
+Cluster17,9-10 novembre,1164,3,0.5,20.5,2.5,1.5,10,,,10,,5.5,2,30.5,3,14,Autre=14.0 (Lagarde)
+Cluster17,9-10 novembre,1164,4,0.5,19,1.5,1,8,2,8,8,,5,2,27,2,16.0,Autre=16.0 (Asselineau (1); Lagarde (8); Polony (2.5); Riner (2); Ruffin (1.5); Villepin (1))
 Harris,3-5 novembre,2101,1,1,19,1,2,11,,12,9,2,5,1,34,3,,
 Harris,3-5 novembre,2101,2,1,19,1,2,12,9,,9,2,6,1,35,3,,
 Harris,3-5 novembre,2101,3,1,18,2,2,11,6,11,,,7,2,36,4,,
