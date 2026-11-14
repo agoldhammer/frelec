@@ -61,7 +61,7 @@ python3 parse_polls.py /tmp/frelec_raw.wiki polls_2027_second_round.csv --second
 First-round voting-intention polls, January–November 2026, scraped from the French
 Wikipedia article
 ["Liste de sondages sur l'élection présidentielle française de 2027"](https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027)
-(pulled 2026-11-12).
+(pulled 2026-11-13).
 
 David Lisnard (Nouvelle Énergie) gained their own column starting with the
 17–19 October 2026 Ifop poll's sub-table ("Octobre-décembre 2026"). Earlier
@@ -106,7 +106,10 @@ Lecornu, etc.). A share Wikipedia reports only as an upper bound (e.g. `<1`)
 is encoded as the midpoint of that bound (`0.5`), with the original reading
 kept in `notes`.
 
-Latest polls: Opinionway (n=982, 9–10 November, three scenarios) — RN (Le Pen)
+Latest polls: OpinionWay (n=1001, 10–12 November, two scenarios) — RN (Le Pen)
+31–32%, Mélenchon 16%, Glucksmann 10%, Philippe 12%, Lisnard 9–10%,
+Retailleau 4–5%, Attal 3–4%; judoka Teddy Riner was tested as an independent
+candidate in one scenario, folded into `Autre` (4%); Opinionway (n=982, 9–10 November, three scenarios) — RN (Le Pen)
 34%, Mélenchon 16–17%, Glucksmann 11–13%, Philippe 11–12% (two scenarios),
 Lisnard 10–12%, Retailleau 4–6%, Attal 4–10% (two scenarios); Cluster17
 (n=1164, 9–10 November, four scenarios) — RN (Le Pen)
