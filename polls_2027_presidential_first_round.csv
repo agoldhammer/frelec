@@ -1,6 +1,12 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Lisnard_NE,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
-OpinionWay,10-12 novembre,1001,1,1,16,2,3,10,3,12,9,,4,2,31,3,4.5,Autre=4.5 (Bouamrane (<1); Riner (4))
-OpinionWay,10-12 novembre,1001,2,1,16,2,3,10,4,12,10,,5,2,32,2,0.5,Autre=0.5 (Bouamrane; reported as <1)
+Elabe,12-13 novembre,1500,1,0.5,17,2,3,13.5,,15,,2.5,6,3,33,4.5,,
+Elabe,12-13 novembre,1500,2,1,17.5,2.5,3,14,10,,,3,9,2.5,33,4.5,,
+Elabe,12-13 novembre,1500,3,0.5,17.5,2,3.5,13,5.5,12,,,6,3,33,4,,
+Elabe,12-13 novembre,1500,4,0.5,17.5,1.5,,14,8.5,,10.5,,6,2.5,32,4,3,Autre=3.0 (Ruffin)
+Elabe,12-13 novembre,1500,5,0.5,18.5,2.5,,13.5,,13,9,,4,3,32.5,3.5,,
+Elabe,12-13 novembre,1500,6,0.5,17,1.5,3,10.5,4,9.5,8,,4,2,31,3,6.0,Autre=6.0 (Polony (1.5); Riner (4.5))
+OpinionWay,10-12 novembre,964,1,1,16,2,3,10,3,12,9,,4,2,31,3,4.5,Autre=4.5 (Bouamrane (<1); Riner (4))
+OpinionWay,10-12 novembre,964,2,1,16,1,3,11,4,12,10,,5,2,32,2,1,Autre=1.0 (Bouamrane)
 Opinionway,9-10 novembre,982,1,1,17,1,3,11,4,11,10,,4,1,34,3,,
 Opinionway,9-10 novembre,982,2,1,16,2,3,12,,12,11,,4,2,34,3,,
 Opinionway,9-10 novembre,982,3,1,16,1,3,13,10,,12,,6,1,34,3,,
