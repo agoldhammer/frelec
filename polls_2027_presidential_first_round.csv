@@ -1,4 +1,15 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Lisnard_NE,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
+YouGov,12-17 novembre,952,1,1,19,2,4,9,5,8,9,,6,2,32,3,,
+YouGov,12-17 novembre,952,2,1,19,3,4,10,,9,10,,7,2,33,3,,
+YouGov,12-17 novembre,952,3,1,22,3,,12,,16,,,,2,40,4,,
+YouGov,12-17 novembre,952,4,1,19,2,6,10,7,,10,,8,1,34,3,,
+YouGov,12-17 novembre,952,5,1,17,2,5,9,4,7,9,,6,2,32,3,5.0,Autre=5.0 (Riner (3); Villepin (2))
+Ifop,13-16 novembre,1690,1,0,17,1.5,2,8,4.5,10,8,,4,1.5,32,3,8.5,Autre=8.5 (Polony (1); Riner (4); Ruffin (2); Villepin (1.5))
+Ifop,13-16 novembre,1690,2,0.5,19,1.5,2.5,10,4,11,9,,4,1.5,34,3,,
+Ifop,13-16 novembre,1690,3,0,19.5,2.5,2.5,10,,12,10,,4,1.5,35,3,,
+Ifop,13-16 novembre,1690,4,0.5,19,2,2.5,11,9,,11,,5,2,35,3,,
+Ifop,13-16 novembre,1690,5,0.5,19.5,2,2.5,11,,14,12,,,1.5,34,3,,
+Ifop,13-16 novembre,1690,6,0.5,19,2.5,3,11.5,,15,,,7,3,36,3.5,,
 Elabe,12-13 novembre,1500,1,0.5,17,2,3,13.5,,15,,2.5,6,3,33,4.5,,
 Elabe,12-13 novembre,1500,2,1,17.5,2.5,3,14,10,,,3,9,2.5,33,4.5,,
 Elabe,12-13 novembre,1500,3,0.5,17.5,2,3.5,13,5.5,12,,,6,3,33,4,,
