@@ -1,8 +1,8 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Lisnard_NE,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
 YouGov,12-17 novembre,952,1,1,19,2,4,9,5,8,9,,6,2,32,3,,
-YouGov,12-17 novembre,952,2,1,19,3,4,10,,9,10,,7,2,33,3,,
-YouGov,12-17 novembre,952,3,1,22,3,,12,,16,,,,2,40,4,,
-YouGov,12-17 novembre,952,4,1,19,2,6,10,7,,10,,8,1,34,3,,
+YouGov,12-17 novembre,952,2,1,19,2,6,10,7,,10,,8,1,34,3,,
+YouGov,12-17 novembre,952,3,1,19,3,4,10,,9,10,,7,2,33,3,,
+YouGov,12-17 novembre,952,4,1,22,3,,12,,16,,,,2,40,4,,
 YouGov,12-17 novembre,952,5,1,17,2,5,9,4,7,9,,6,2,32,3,5.0,Autre=5.0 (Riner (3); Villepin (2))
 Ifop,13-16 novembre,1690,1,0,17,1.5,2,8,4.5,10,8,,4,1.5,32,3,8.5,Autre=8.5 (Polony (1); Riner (4); Ruffin (2); Villepin (1.5))
 Ifop,13-16 novembre,1690,2,0.5,19,1.5,2.5,10,4,11,9,,4,1.5,34,3,,
