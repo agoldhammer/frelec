@@ -1,4 +1,7 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Lisnard_NE,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
+Harris,18-19 novembre,2088,1,1,18,1,1,11,4,9,11,,4,1,31,3,5.0,Autre=5.0 (Riner (4); Villepin (1))
+Harris,18-19 novembre,2088,2,1,19,1,1,11,,10,11,,4,1,31,4,6.0,Autre=6.0 (Riner (4); Villepin (2))
+Harris,18-19 novembre,2088,3,1,19,1,2,11,7,,12,,5,1,30,4,7.0,Autre=7.0 (Riner (5); Villepin (2))
 YouGov,12-17 novembre,952,1,1,19,2,4,9,5,8,9,,6,2,32,3,,
 YouGov,12-17 novembre,952,2,1,19,2,6,10,7,,10,,8,1,34,3,,
 YouGov,12-17 novembre,952,3,1,19,3,4,10,,9,10,,7,2,33,3,,

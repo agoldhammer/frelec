@@ -61,7 +61,7 @@ python3 parse_polls.py /tmp/frelec_raw.wiki polls_2027_second_round.csv --second
 First-round voting-intention polls, January–November 2026, scraped from the French
 Wikipedia article
 ["Liste de sondages sur l'élection présidentielle française de 2027"](https://fr.wikipedia.org/wiki/Liste_de_sondages_sur_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027)
-(pulled 2026-11-20).
+(pulled 2026-11-23).
 
 David Lisnard (Nouvelle Énergie) gained their own column starting with the
 17–19 October 2026 Ifop poll's sub-table ("Octobre-décembre 2026"). Earlier
@@ -106,7 +106,11 @@ Lecornu, etc.). A share Wikipedia reports only as an upper bound (e.g. `<1`)
 is encoded as the midpoint of that bound (`0.5`), with the original reading
 kept in `notes`.
 
-Latest polls: YouGov (n=952, 12–17 November, five scenarios) — RN (Le Pen)
+Latest polls: Harris (n=2088, 18–19 November, three scenarios) — RN (Le Pen)
+30–31%, Mélenchon 18–19%, Glucksmann 11%, Lisnard 11–12%, Philippe 9–10% (two
+scenarios), Attal 4–7% (two scenarios), Retailleau 4–5%; judoka Teddy Riner was
+tested as an independent alongside Villepin in every scenario, folded into
+`Autre` (5–7%); YouGov (n=952, 12–17 November, five scenarios) — RN (Le Pen)
 32–40%, Mélenchon 17–22%, Glucksmann 9–12%, Philippe 7–16% (four scenarios),
 Lisnard 9–10% (four scenarios), Retailleau 6–8% (four scenarios), Attal 4–7%
 (three scenarios); judoka Teddy Riner was tested as an independent alongside

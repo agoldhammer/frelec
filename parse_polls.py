@@ -168,10 +168,27 @@ def header_key(cell):
 
 def split_blocks(text):
     """Split a wikitable into its |- delimited row blocks, as lists of cell
-    lines with the table's own {| / |} markers dropped."""
+    lines with the table's own {| / |} markers dropped.
+
+    A cell's wikitext can itself wrap onto a further physical line without a
+    leading '|' -- or, as a long citation template does, wrap in a way that
+    *does* start with '|' even though it's a template parameter rather than a
+    new cell -- whenever it's inside unclosed {{ }} / [[ ]] nesting. Track
+    that nesting depth across physical lines and fold such continuations back
+    onto the line that opened them, so a cell's content isn't split in two.
+    """
     blocks = []
     for block in re.split(r'(?m)^\|-[^\n]*\n?', text):
-        lines = [l for l in block.split('\n') if l.strip() and l.strip() != '|}']
+        merged = []
+        depth = 0
+        for l in block.split('\n'):
+            if merged and depth > 0:
+                merged[-1] += '\n' + l
+            else:
+                merged.append(l)
+            depth += l.count('{{') - l.count('}}') + l.count('[[') - l.count(']]')
+            depth = max(depth, 0)
+        lines = [l for l in merged if l.strip() and l.strip() != '|}']
         lines = [l for l in lines if not l.lstrip().startswith('{|')]
         if lines:
             blocks.append(lines)
