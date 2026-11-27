@@ -54,6 +54,16 @@ CHALLENGERS = {
     # for the whole set are the pre-existing Ruffin/Attal (light) and
     # RN/Glucksmann, Ruffin/Melenchon (dark) pairs, not this slot.
     "Hollande_PS":    ("Hollande (PS)", "#991b5e", "#b43d83"),
+    # Lisnard has no first-round SERIES slot (consistently minor there), so this
+    # is a fresh pick, swept in OKLCH against the nine other committed colors
+    # with a Python port of validate_palette.js's exact math (node is not
+    # available in this environment; the port was sanity-checked by round-
+    # tripping every already-committed hex through it before use). Light
+    # #740bfe: worst CVD dE 8.6 (deutan, vs. RN), worst normal-vision dE 15.2
+    # (vs. Glucksmann); contrast 6.35. Dark #7a3ffe: worst CVD dE 8.0 (deutan,
+    # vs. RN), worst normal-vision dE 15.9 (vs. Glucksmann); contrast 3.29.
+    # Lightness band, chroma floor and contrast all PASS in both modes.
+    "Lisnard_NE":     ("Lisnard (NE)", "#740bfe", "#7a3ffe"),
 }
 
 RN_CANDIDATES = {

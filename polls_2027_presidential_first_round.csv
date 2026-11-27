@@ -1,13 +1,14 @@
 pollster,date,sample,scenario,Arthaud_LO,Melenchon_LFI,Roussel_PCF,Tondelier_LE,Glucksmann_PP,Attal_RE,Philippe_HOR,Lisnard_NE,Villepin_LFH,Retailleau_LR,DupontAignan_DLF,RN,Zemmour_REC,Autre,notes
-Harris,18-19 novembre,2088,1,1,18,1,1,11,4,9,11,,4,1,31,3,5.0,Autre=5.0 (Riner (4); Villepin (1))
-Harris,18-19 novembre,2088,2,1,19,1,1,11,,10,11,,4,1,31,4,6.0,Autre=6.0 (Riner (4); Villepin (2))
-Harris,18-19 novembre,2088,3,1,19,1,2,11,7,,12,,5,1,30,4,7.0,Autre=7.0 (Riner (5); Villepin (2))
+OpinionWay,25-26 novembre,912,1,1,16,2,1,10,4,8,12,2,4,2,33,3,2.5,Autre=2.5 (Bouamrane (<1); Riner (2))
+Harris,18-19 novembre,2088,1,1,18,1,1,11,4,9,11,1,4,1,31,3,4,Autre=4.0 (Riner)
+Harris,18-19 novembre,2088,2,1,19,1,1,11,,10,11,2,4,1,31,4,4,Autre=4.0 (Riner)
+Harris,18-19 novembre,2088,3,1,19,1,2,11,7,,12,2,5,1,30,4,5,Autre=5.0 (Riner)
 YouGov,12-17 novembre,952,1,1,19,2,4,9,5,8,9,,6,2,32,3,,
 YouGov,12-17 novembre,952,2,1,19,2,6,10,7,,10,,8,1,34,3,,
 YouGov,12-17 novembre,952,3,1,19,3,4,10,,9,10,,7,2,33,3,,
 YouGov,12-17 novembre,952,4,1,22,3,,12,,16,,,,2,40,4,,
-YouGov,12-17 novembre,952,5,1,17,2,5,9,4,7,9,,6,2,32,3,5.0,Autre=5.0 (Riner (3); Villepin (2))
-Ifop,13-16 novembre,1690,1,0,17,1.5,2,8,4.5,10,8,,4,1.5,32,3,8.5,Autre=8.5 (Polony (1); Riner (4); Ruffin (2); Villepin (1.5))
+YouGov,12-17 novembre,952,5,1,17,2,5,9,4,7,9,2,6,2,32,3,3,Autre=3.0 (Riner)
+Ifop,13-16 novembre,1690,1,0,17,1.5,2,8,4.5,10,8,1.5,4,1.5,32,3,7.0,Autre=7.0 (Polony (1); Riner (4); Ruffin (2))
 Ifop,13-16 novembre,1690,2,0.5,19,1.5,2.5,10,4,11,9,,4,1.5,34,3,,
 Ifop,13-16 novembre,1690,3,0,19.5,2.5,2.5,10,,12,10,,4,1.5,35,3,,
 Ifop,13-16 novembre,1690,4,0.5,19,2,2.5,11,9,,11,,5,2,35,3,,
@@ -27,7 +28,7 @@ OpinionWay,9-10 novembre,982,3,1,16,1,3,13,10,,12,,6,1,34,3,,
 Cluster17,9-10 novembre,1164,1,0.5,20,2,1.5,11,,13.5,10,,5,3,30.5,3,,
 Cluster17,9-10 novembre,1164,2,0.5,20.5,2,1.5,11.5,11,,10,,6,3,31,3,,
 Cluster17,9-10 novembre,1164,3,0.5,20.5,2.5,1.5,10,,,10,,5.5,2,30.5,3,14,Autre=14.0 (Lagarde)
-Cluster17,9-10 novembre,1164,4,0.5,19,1.5,1,8,2,8,8,,5,2,27,2,16.0,Autre=16.0 (Asselineau (1); Lagarde (8); Polony (2.5); Riner (2); Ruffin (1.5); Villepin (1))
+Cluster17,9-10 novembre,1164,4,0.5,19,1.5,1,8,2,8,8,1,5,2,27,2,15.0,Autre=15.0 (Asselineau (1); Lagarde (8); Polony (2.5); Riner (2); Ruffin (1.5))
 Harris,3-5 novembre,2101,1,1,19,1,2,11,,12,9,2,5,1,34,3,,
 Harris,3-5 novembre,2101,2,1,19,1,2,12,9,,9,2,6,1,35,3,,
 Harris,3-5 novembre,2101,3,1,18,2,2,11,6,11,,,7,2,36,4,,
@@ -59,7 +60,7 @@ Ifop,17-19 octobre,1928,2,0.5,16.5,2.5,3,14,,15,,,7.5,1.5,36,3.5,,
 Ifop,17-19 octobre,1928,3,0.5,16,2,3,16,13,,,,7,1.5,38,3,,
 Ifop,17-19 octobre,1928,4,0.5,18,,,16,,16,,,6.5,2.5,37,3.5,,
 Ifop,17-19 octobre,1928,5,0.5,20,,,10,6.5,14,,,6,2,38,3,,Glucksmann_PP=10.0 (Hollande (PS))
-Ifop,17-19 octobre,1928,6,0,15,2,2.5,12,4,12,5.5,,5.5,1.5,34,3,3.0,Autre=3.0 (Ruffin (1.5); Villepin (1.5))
+Ifop,17-19 octobre,1928,6,0,15,2,2.5,12,4,12,5.5,1.5,5.5,1.5,34,3,1.5,Autre=1.5 (Ruffin)
 Ifop,17-19 octobre,1928,7,0.5,15.5,2,3,13,5,13,7,,,2,36,3,,
 Ifop,17-19 octobre,1928,8,0.5,15,2,3,12,6,12,,,6,2,35,3.5,3.0,Autre=3.0 (Polony (1); Ruffin (2))
 Elabe,14-16 octobre,1701,1,1,15,1.5,3,15.5,,16.5,,2,7,2.5,32.5,3.5,,
@@ -77,12 +78,12 @@ YouGov,12-15 octobre,1094,1,0,15,3,6,12,6,10,,,6,3,36,3,,
 YouGov,12-15 octobre,1094,2,0,15,3,6,14,10,,,,9,3,37,4,,
 YouGov,12-15 octobre,1094,3,0,15,3,6,13,,13,,,7,3,36,3,,
 YouGov,12-15 octobre,1094,4,1,16,3,6,9,,15,,,7,3,37,4,,Glucksmann_PP=9.0 (Hollande (PS))
-YouGov,12-15 octobre,1094,5,0,13,2,5,12,6,8,4,,5,2,35,4,3.0,Autre=3.0 (Ruffin (2); Villepin (1))
+YouGov,12-15 octobre,1094,5,0,13,2,5,12,6,8,4,1,5,2,35,4,2,Autre=2.0 (Ruffin)
 OpinionWay,13-14 octobre,1043,1,1,15,1,2,13,5,12,4,,6,1,35,5,0.5,Autre=0.5 (Bouamrane; reported as <1)
 OpinionWay,13-14 octobre,1001,1,0.5,14,3,3,13,7,12,,,7,2,35,4,,Arthaud_LO=0.5 (reported as <1)
 OpinionWay,13-14 octobre,1001,2,1,15,2,3,16,11,,,,9,2,37,4,,
 OpinionWay,13-14 octobre,1001,3,1,15,2,3,15,,15,,,8,2,35,4,,
-Ifop,12-14 octobre,1390,1,0,16,2,2,11.5,5,13,6,,5,1,32,3,3.5,Autre=3.5 (Ruffin (2); Villepin (1.5))
+Ifop,12-14 octobre,1390,1,0,16,2,2,11.5,5,13,6,1.5,5,1,32,3,2,Autre=2.0 (Ruffin)
 Ifop,12-14 octobre,1390,2,0.5,17,2.5,2,16,13,,,,8,2,36,3,,
 Ifop,12-14 octobre,1390,3,0.5,16,3,2.5,13.5,,18,,,6.5,2,35,3,,
 Ifop,12-14 octobre,1390,4,0,16,2.5,2,14,6,14,,,6.5,2,34,3,,
