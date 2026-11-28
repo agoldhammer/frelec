@@ -45,6 +45,12 @@ SERIES = {
     "Retailleau_LR": ("Retailleau (LR)",        "#e34948", "#e66767"),
     "Zemmour_REC":   ("Zemmour (REC)",          "#e87ba4", "#d55181"),
     "Tondelier_LE":  ("Tondelier (LE)",         "#eb6834", "#d95926"),
+    # Added 2026-11-28: Lisnard now polls 8-14% in the October-November
+    # tables. Colour carried over unchanged from visualize_second_round.py,
+    # where it was validated (OKLCH sweep, port of validate_palette.js) against
+    # all eight colours above plus Ruffin and Hollande: worst CVD dE 8.6 light
+    # / 8.0 dark (deutan, vs. RN), lightness, chroma and contrast PASS.
+    "Lisnard_NE":    ("Lisnard (NE)",           "#740bfe", "#7a3ffe"),
 }
 
 # Consistently minor candidates left off the chart (kept in the footnote so
@@ -197,8 +203,12 @@ def plot_trend(poll_means, raw_points, theme, dark, sigma, out, title, subtitle)
         xs, ys = zip(*raw_points[cand])
         ax.scatter(xs, ys, s=16, color=color, alpha=0.3,
                    edgecolors=theme["surface"], linewidths=0.6, zorder=2)
-        smooth = gaussian_smooth(pts, grid, sigma)
-        ax.plot(grid, smooth, color=color, linewidth=2,
+        # Start the line at the candidate's own first poll: a late entrant
+        # (Lisnard, first polled late June 2026) would otherwise get a flat
+        # line extrapolated back to the start of the chart.
+        cand_grid = [t for t in grid if t >= pts[0][0]]
+        smooth = gaussian_smooth(pts, cand_grid, sigma)
+        ax.plot(cand_grid, smooth, color=color, linewidth=2,
                 solid_capstyle="round", solid_joinstyle="round", zorder=3)
         # end marker with a surface ring so it survives line crossings
         ax.scatter([grid[-1]], [smooth[-1]], s=42, color=color, zorder=4,

@@ -76,6 +76,11 @@ same way Villepin's are (see below), so their series is continuous back to
 their first poll appearance rather than starting only once they had a column
 of their own.
 
+As of 2026-11-28 Lisnard is also a plotted series on all three first-round
+charts (same color as on the runoff charts). Each smoothed trend line starts
+at that candidate's own first poll, so Lisnard's starts at the 22–24 June
+Ifop poll instead of being extrapolated back to March.
+
 Starting with the 7–8 July 2026 polls (Wikipedia's "Second semestre 2026"
 sub-table), the table switched the RN column from a hypothetical "candidate"
 placeholder to Marine Le Pen by name and dropped the Dominique de Villepin
